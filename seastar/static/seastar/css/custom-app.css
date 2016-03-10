@@ -94,6 +94,10 @@ body{
   
 }
 
+a:focus {
+  outline: 0;
+}
+
 .main-nav-bar .navbar-brand {
 	  height: 70px;
 }
