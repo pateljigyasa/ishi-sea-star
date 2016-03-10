@@ -10,6 +10,8 @@ def index(request):
     form=ContactForm()
     return render(request, 'index.html',{'form':form})
 
+
+
 #Response method for contact which will send mail.
 def contact_response(request): 
     if request.method == 'POST': 

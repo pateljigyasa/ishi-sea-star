@@ -9,8 +9,9 @@ from django.conf.global_settings import STATICFILES_DIRS
 
 urlpatterns = [
     url(r'^$', views.index, name='index'), 
-     url(r'^contact-response/$', views.contact_response,name='contact_response'), 
-      url(r'^response-thanks/$', views.response_thanks)
+    url(r'^contact-response/$', views.contact_response,name='contact_response'), 
+    url(r'^response-thanks/$', views.response_thanks),
+     
     
 ] 
  

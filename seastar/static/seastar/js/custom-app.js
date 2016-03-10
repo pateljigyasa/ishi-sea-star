@@ -11,7 +11,8 @@ $(document).ready(function() {
 	    scrollBy(0, -navOffset);
 	     
 	}); 
-
+	
+	 
 	 
 
 	
