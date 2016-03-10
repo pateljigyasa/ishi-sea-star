@@ -1,1 +1,219 @@
-<h1>Hello World!!!</h1>
+<!-- Main Index Page of the Website -->
+{% extends 'base.html' %} 
+{% block content %}   
+	 <div class="container-fluid contentContainer top-header" id="home">
+	 	<div class="row" >
+	 		<div class="col-md-12 center-col" id="topCol">
+	 			<div class="center">  
+			 		<h1>VIDEO HAS EVOLVED</h1>
+			 		<p class="lead">We Develop Next Generation Technologies</p>
+			 	</div>  
+	 		</div>
+	 	</div>
+	</div>
+	<div class="container-fluid about" id="security">
+		<div class="row about-section-text"> 
+			<div class="col-md-12">
+				<h3 class="row-heading">WHO WE ARE</h3>
+			</div>
+			<div class="col-md-10 col-md-offset-1">
+				<p>Seastar was formed by the partnership of a world-class technical team in the area of real-time video processing, with a premier software development,marketing, and project management team with locations worldwide.
+				Our technical heritage began by the development and deployment of high-resolution, wide-area surveillance solutions for the US Government.We&rsquo;ve  built upon these  advanced capabilities to develop solutions for remote surveillance, remote broadcasting and much more.
+				</p>
+			</div> 
+		</div>
+		<div class="row"> 
+			<div class="col-md-6 col-sm-6 no-padding">
+				<div class="about-section">
+					<div class="about-image left-img-bg"></div> 
+					<div class="left-about-overlay">
+						<h4>CASE STUDY</h4>
+						<br>
+						<h2>Next Generation Video <br>Solutions</h2>
+						<p>Security & Surveillance</p>
+					</div>
+				</div> 
+			</div>
+			<div class="col-md-6 col-sm-6 no-padding">
+				<div class="about-section">
+					<div class="about-image right-img-bg"></div>
+					<div class="right-about-overlay">
+						<h4>WHITE PAPER</h4>
+						<br>
+						<h2>Future of 4k <br>Broadcasting</h2>
+						<p>Video Production</p>
+					</div> 
+				</div> 
+			 
+			</div>
+		</div>
+	</div>	
+	
+	<div class="container-fluid video-container" id="video" > 
+		<div class="row video-section-header"> 
+			<div class="col-md-12">
+				<h3 class="row-heading">Video Solutions</h3>
+			</div>
+			<div class="col-sm-10 col-sm-offset-1">
+				<p class="video-sub-heading">All that We&rsquo;ve explored so far!</p>
+			</div>
+		</div>
+		<div class="row video-images-section">
+			<div class="col-sm-4 col-md-4 video-images">
+				<div class="">
+					<div class="video-image" >
+						<img src="{{ baseUrl }}seastar/images/seastar_logo_header.png" class="img-thumbnail"/>
+					</div>
+					<div class="video-image-title">4K Mobile Wide Area Surveillance</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4 video-images">
+				<div class="">
+					<div class="video-image">
+						<img src="{{ baseUrl }}seastar/images/seastar_logo_header.png" class="img-thumbnail"/>
+					</div>
+					<div class="video-image-title">The Future of Sports Broadcasting</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4 video-images">
+				<div class="">
+					<div class="video-image" >
+						<img src="{{ baseUrl }}seastar/images/seastar_logo_header.png" class="img-thumbnail"/>
+					</div>
+					<div class="video-image-title">Advanced Video Editing On The Cloud</div>
+				</div>
+			</div>
+		</div>
+		<div class="row video-section-quote">
+			<div class="col-md-10 col-md-offset-1">
+				<blockquote>
+	    			<p>&#8220;Seastar has been developing video security and surveillance visualization solutions 
+	    			for years.Our core product help visualize your security environment from an intuitive dashboard.Our goal is to address the explosive growth in the smart and cost effective use of video&#8221;</p>
+	    			<footer>Manoj Agrawal, CEO Seastar Labs</footer>
+	  			</blockquote>
+			</div> 
+		</div>	
+	</div>
+	
+	<div class="container-fluid services" id="services">
+		<div class="row services-section-text"> 
+			<div class="col-md-12">
+				<h3 class="row-heading">Our Services</h3>
+			</div>
+			<div class="col-sm-10 col-sm-offset-1">
+				<p class="video-sub-heading">Seastar's surveillance solutions are now deployed as standard equipment in next-generation ships for the US Navy.Seastar's first-generation Strive broadcast solutions have been deployed at numerous sports-events providing live streaming of produced video to viewers worldwide.</p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-6 col-md-6 col-xs-12 services-images">
+		    <div class="services-thumbnail">
+		      <div class="services-image service1"></div>
+		      <h3 class="service-title">Security & Surveillance</h3>
+		      <div class="service-entry"> 
+		        <p>Custom Surveillance Solution & Integration</p> 
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-6 col-xs-12 services-images">
+		    <div class="services-thumbnail">
+		    <div class="services-image service2"></div>
+		      <h3 class="service-title">Video Production</h3> 
+		      <div class="service-entry"> 
+		        <p>Cutting-edge broadcasting & production solution</p> 
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="container-fluid contactus" id="contactus">
+		<div class="row contactus-section-text"> 
+			<div class="col-md-12">
+				<h3 class="row-heading">Our Leadership</h3>
+			</div> 
+		</div>
+		
+		<div class="row our-leadership-row">
+			<div class="col-md-4 col-sm-4 col-xs-12"> 
+				<div class="post">
+					<div class="post-image post1"></div>
+					 <p class="post-title">Dr. Manoj Aggarwal <br/> Founder & CTO</p> 
+					<div class="post-entry">
+						<p>A renowned Ph.D in Electrical Engineering, Inventor and Entrepreneur.Previously a technical manager at SRI International and currently holds 20+ design & utility patents.Manoj has also led projects for various government and security agencies.</p>
+					</div> 
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12"> 
+				<div class="post" style="">
+					<div class="post-image post2"></div>
+					 <p class="post-title">Akhil Kumar <br/> VP of Engineering</p> 
+					  
+					<div class="post-entry">
+						<p>A hands on architect, agile expert and IBM veteran with 20 years of experience in creating software products. Akhil specializes in extreme programming, application architecture, cloud computing and image processing.</p>
+					</div> 
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12"> 
+				<div class="post" style="">
+					<div class="post-image  post3"></div>
+					 <p class="post-title">Rajiv Sohal <br/>VP of Product</p> 
+					<div class="post-entry">
+						<p>Brings 20+ years of experience in managing and providing technical leadership to enterprise software development initiatives. Rajiv has helped design, build and deliver numerous successful products and services.</p>
+					</div> 
+				</div>
+			</div>
+		</div>
+		<div class="row contactus" id="contact-form"> 
+			<div class="col-md-12 margin-bottom-10">
+				<h3 class="row-heading">Contact Us</h3>
+			</div> 
+			<div class="col-sm-10 col-sm-offset-1">
+				<p class="contactform-sub-heading">Get in touch to learn about more our offerings.</p>
+			</div> 
+		</div>
+			<div class="row contactform">
+				<div class="col-md-8 col-md-offset-2">
+					<form role="form" action="/contact-response/" method="POST">
+						{% csrf_token %}
+						<div class="row">
+			        		<div class="col-sm-6 form-group">
+			        			<label for="name">Full Name</label>
+			          			<!--  <input class="form-control" id="name" name="name" type="text" required>-->
+			          			{{form.name}}
+			        		</div>
+			        		<div class="col-sm-6 form-group">
+			        			<label for="email">E-mail</label>
+			          			<!--  <input class="form-control" id="email" name="email" type="email" required>-->
+			          			{{form.email}}
+			        		</div>
+		        		</div>
+		        		<div class="row">
+			        		<div class="col-sm-6 form-group">
+			        			<label for="name">Phone Number</label>
+			          			<!--  <input class="form-control" id="phoneno" name="phoneno" type="text">-->
+			          			{{form.phoneno}}
+			        		</div>
+			        		<div class="col-sm-6 form-group">
+			        			<label for="email">Company</label>
+			          			<!--  <input class="form-control" id="company" name="company" type="text">-->
+			          			{{form.company}}
+			        		</div>
+		        		</div>
+		        		<label for="message">Message</label>
+		        		<!-- <textarea class="form-control" id="message" name="message" rows="5"></textarea> -->
+		        		{{form.message}}
+		        		<div class="row">
+		        			<div class="col-sm-12 form-group text-center">
+		        				<button class="btn submit-button" type="submit">Submit</button>
+		        			</div>
+		        		</div>
+		        	</form>
+				</div>
+			</div>
+		 
+	</div>
+	 
+{% endblock %} 
+
+
+ 

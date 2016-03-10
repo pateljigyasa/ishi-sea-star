@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Base Template for whole site. Every Template Extends this. It contains header, footer, css, js, and static files and headers common in all templates -->
+
+{% load static %}
+{% load utils %}
+
+{% static "" as baseUrl %} 
+ 
+<html>
+    <!-- Make modifable head elements -->
+    <head>
+    	<meta charset="utf-8"> 
+   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %}SeaStar Labs{% endblock title %}</title>
+        {% block head_favicon %}
+            <link rel="shortcut icon" type="image/x-icon"
+                  href="{{baseUrl}}seastar/images/favicon.ico">
+        {% endblock head_favicon %}
+        {% block head_meta %}
+            {% block head_meta_charset %}
+                <meta http-equiv="Content-Type"
+                      content="text/html; charset=utf-8" />
+            {% endblock head_meta_charset %} 
+            {% block head_meta_viewport %}
+                <meta name="viewport"
+                      content="width=device-width, initial-scale=1.0">
+            {% endblock head_meta_viewport %}
+            {% block head_meta_description %}
+            	<meta name="description" content="">
+            {% endblock head_meta_description %}
+            {% block head_meta_keywords %}
+   				<meta name="keywords" content="">
+   			{% endblock head_meta_keywords %}
+   			
+   			
+        {% endblock head_meta %}
+        {% block head_css %}
+        	{% block head_canonical %}
+   			<link rel="canonical" href="">
+   			 {% endblock head_canonical %}
+            {% block head_css_site %}
+                <link href="{% version "seastar/css/bootstrap.min.css" %}"
+                      rel="stylesheet" media="screen">
+                <link href="{% version "seastar/css/custom-app.css" %}"
+                      rel="stylesheet" media="screen"> 
+               <link href="{% version "seastar/css/font-awesome.min.css"%}"
+                      rel="stylesheet" media="screen">
+            {% endblock head_css_site %}
+            {% block head_css_section %}{% endblock head_css_section %}
+            {% block head_css_page %}{% endblock head_css_page %}
+        {% endblock head_css %} 
+    </head> 
+    <body > 
+	    {# The Header #}
+	    {%block header%}
+	    <!-- Fixed navbar -->
+	    <!-- Header of the website -->
+       {% include 'header.html' %} 
+       {%endblock%} 
+     	
+	    {# The Document Body #} 
+	    {% block content %} 
+	        {#The submenu #}
+	        	{%block sub_menu%} {%endblock%} 
+	    {% endblock %}
+	    
+	    {# The Footer #}
+	    {%block footer%}   
+	    	{% include 'footer.html' %} 
+	    {%endblock footer%}   
+	
+    {# Set of blocks that can be used to display JavaScript files #} 
+    	{% block site_javascript %}
+    		<script src="{% version "seastar/js/jquery.min.js"%}"></script>
+            <script src="{% version "seastar/js/bootstrap.min.js"%}"></script>
+            <script src="{% version "seastar/js/custom-app.js"%}"></script>  
+    	{%endblock site_javascript%}
+        {% block page_usable_javascript %}{% endblock page_usable_javascript %} 
+  </body>  
+  
+</html>

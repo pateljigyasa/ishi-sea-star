@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from django.conf.global_settings import SERVER_EMAIL
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) 
 
@@ -23,6 +24,12 @@ SECRET_KEY = 'hyqq5x==c@by7v*212yzlfqry%pqrh=$yxdy1v$7!=s-luo1*w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.8/howto/static-files/
+
+STATIC_URL =  '/static/'
+STATIC_ROOT = 'C:/virtualenv/seastarenv/seastarapp/seastar/static/'
 
 ALLOWED_HOSTS = []
 
@@ -49,6 +56,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    
 )
 
 ROOT_URLCONF = 'seastarapp.urls'
@@ -64,7 +72,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                "seastarapp.context_processors.app_linkedin_url",
+                "seastarapp.context_processors.app_twitter_url",
+                "seastarapp.context_processors.app_blog_url",
+                "seastarapp.context_processors.app_contactus_email_address",
             ],
+             
         },
     },
 ]
@@ -98,8 +111,23 @@ USE_L10N = True
 
 USE_TZ = True
 
+"""Constants for Seastar Labs"""
+APP_LINKEDIN_URL = 'https://www.linkedin.com/company/ishi-systems-inc.?trk=fc_badge'
+APP_TWITTER_URL = 'http://www.twitter.com/ishisystems' 
+APP_BLOG_URL = 'http://blog.ishisystems.com/'
+APP_CONTACTUS_EMAIL_ADDRESS = 'pateljigyasa@gmail.com'
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.8/howto/static-files/
+"""Setting for customization of Grappelli admin tool"""
+#GRAPPELLI_ADMIN_TITLE ='SeaStar';
+GRAPPELLI_CLEAN_INPUT_TYPES = True;
 
-STATIC_URL = '/static/'
+
+#For email
+#Need to change email setting for sending emails
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  
+EMAIL_USE_TLS = True 
+EMAIL_HOST = 'smtp.gmail.com' 
+EMAIL_HOST_USER = 'pateljigyasa@gmail.com'  
+EMAIL_HOST_PASSWORD = 'parvati@vishnu3' 
+EMAIL_PORT = 587
+ 

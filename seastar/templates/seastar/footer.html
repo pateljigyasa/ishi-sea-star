@@ -1,0 +1,29 @@
+<!-- Footer of the site included in base template-->
+{% load utils %}
+{% bool_match_url_with_current_path 'response-thanks' as is_response_thanks_url %} 
+<!-- Footer  of the website -->
+		<footer class="site-footer">
+	        <div class="section-gray">
+	            <div class="container">
+	                <div class="row" >
+	                    <div class="col-sm-6 footer-logo-col">
+	                        <h4><img src="{{ baseUrl }}seastar/images/seastar_logo_footer.png" class="img-thumbnail" width="200"></h4> 
+	                        <p class="footer-logo-tag-line">Driven by Ultra High Defination</p>
+	                        <p>Seastar Labs 201-332-6900 201-332-1588</p>
+	                    </div> 
+	                    <div class="col-sm-6 footer-follow-col">
+    						<h4>Follow Us</h4> 
+    						<p> 
+						    <a target="_blank" href="{{ APP_TWITTER_URL }}">
+							      <img src="{{ baseUrl }}seastar/images/twic.png" class="img-thumbnail" width="35">
+						     </a>
+    
+						     <a target="_blank" href="{{ APP_LINKEDIN_URL }}">
+						        <img src="{{ baseUrl }}seastar/images/face.png" class="img-thumbnail" width="35">
+						    </a>
+    						</p> 
+						</div> 
+	                </div>
+	            </div>
+	        </div>  
+    	</footer>
