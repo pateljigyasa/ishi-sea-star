@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^contact-response/$', views.contact_response,name='contact_response'), 
     url(r'^response-thanks/$', views.response_thanks),
      
+     
     
 ] 
  
