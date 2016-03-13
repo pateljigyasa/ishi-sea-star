@@ -1,18 +1,19 @@
 $(document).ready(function() {
 	$(".contentContainer").css("min-height",$(window).height()); 
-	$("#topCol").css("height",$(window).height()); 
+	$("#topCol").css("height",$(window).height());  
 	//$(".video-image").bg_fit();
 	//$('.col-eq').colequalizer();
 	//var offset = 80;
-	var navOffset = $('.navbar').height();
-	$('#nav-contact-us').click(function(event) {
+	//var navOffset = $('.navbar').height();
+	/*$('#nav-contact-us').click(function(event) {
 	    event.preventDefault();
-	    $($(this).attr('href'))[0].scrollIntoView();
+	    $("#contact-form")[0].scrollIntoView();
 	    scrollBy(0, -navOffset);
 	     
-	}); 
-	
+	}); */ 
 	 
+	 
+});
 	 
 
 	
@@ -37,5 +38,5 @@ $(document).ready(function() {
 	 });*/
 	 
  
-});
+ 
  

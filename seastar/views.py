@@ -10,7 +10,8 @@ def index(request):
     form=ContactForm()
     return render(request, 'index.html',{'form':form})
 
-
+def security(request): 
+    return render(request, 'security.html')
 
 #Response method for contact which will send mail.
 def contact_response(request): 
