@@ -13,6 +13,18 @@ def index(request):
 def security(request): 
     return render(request, 'security.html')
 
+def cloudmate(request): 
+    return render(request, 'cloudmate.html')
+
+def eye4k(request): 
+    return render(request, 'eye4k.html')
+
+def videoproduction(request): 
+    return render(request, 'video_production.html')
+
+def gameview(request): 
+    return render(request, 'gameview.html')
+
 #Response method for contact which will send mail.
 def contact_response(request): 
     if request.method == 'POST': 

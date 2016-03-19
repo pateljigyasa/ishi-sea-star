@@ -11,7 +11,12 @@ urlpatterns = [
     url(r'^$', views.index, name='index'), 
     url(r'^contact-response/$', views.contact_response,name='contact_response'), 
     url(r'^response-thanks/$', views.response_thanks),
-    url(r'^security/$', views.security)
+    url(r'^security/$', views.security),
+    url(r'^cloudmate/$', views.cloudmate),
+    url(r'^eye4k/$', views.eye4k),
+    url(r'^video-production/$', views.videoproduction),
+    url(r'^game-view/$', views.gameview),
+    url(r'^index/$', views.index,name='index'),
      
     
 ] 

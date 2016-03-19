@@ -16,4 +16,4 @@ class ContactForm(forms.Form):
         email = forms.CharField(widget=forms.EmailInput(attrs={'class':'form-control','required':True}))
         phoneno = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control'}),required=False)
         company = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control'}),required=False)
-        message = forms.CharField(widget=forms.Textarea(attrs={'class':'form-control','required':True,'rows':'5'}))
+        message = forms.CharField(widget=forms.Textarea(attrs={'class':'form-control','required':True,'rows':'8'}))
