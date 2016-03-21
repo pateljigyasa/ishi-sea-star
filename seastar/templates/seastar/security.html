@@ -2,11 +2,13 @@
 {% extends 'base.html' %} 
 {% block content %}  
 	<div class="container-fluid"> 
-	 	<div class="row" id="top-header-img-wrapper">
-	 		<div class="col-md-6 col-md-offset-5 col-sm-8 col-sm-offset-5 col-xs-12 security-img-text-overlay" >  
-					<h1 >Security, Surveillance <br> & Custom Video Processing</h1> 
+		 	<div class="row" id="top-header-img-wrapper">
+			 	<div class="gameview-production-overlay">
+			 		<div class="col-md-6 col-md-offset-5 col-sm-8 col-sm-offset-5 col-xs-12 security-img-text-overlay" >  
+							<h1 >Security, Surveillance <br> & Custom Video Processing</h1> 
+					</div>
+			 	</div> 
 			</div>
-	 	</div> 
 	 </div>  
 	 <section style="width:100%;" class="security-section-extra-padding">
 	 	<div class="container center">
@@ -55,19 +57,19 @@
 				<div class="col-sm-6 col-md-6 col-xs-12 technology-images-col-1">
 					<!-- <img src="{{ baseUrl }}seastar/images/cloudmate.png" class="img-thumbnail  hidden-sm hidden-md hidden-lg"/>--> 
 					<img src="{{ baseUrl }}seastar/images/cloudmate_new.png" class="img-thumbnail" width="200"/>
-					<div class="technology-images-text">
+					<div class="technology-images-text-1">
 						<img src="{{ baseUrl }}seastar/images/cloudmate_text.png" class="img-thumbnail"> 
 						<p>Exploit 4k UHD resolution video with existing, low-cost 720dp video infrastructure</p>
-						<a href="/cloudmate/">Learn More</a>
+						 <div class="tech-img-link-1"><a href="/cloudmate/">Learn More</a></div> 
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-6 col-xs-12 technology-images-border-right technology-images-col-2">
-					<img src="{{ baseUrl }}seastar/images/technology_camera_2.png" class="img-thumbnail" width="200"/>
+					<img src="{{ baseUrl }}seastar/images/technology_camera_2.png" class="img-thumbnail" width="165"/>
 					<!-- <img src="{{ baseUrl }}seastar/images/technology_camera.png" class="img-thumbnail  hidden-sm hidden-md hidden-lg"/>-->
-					<div class="technology-images-text">
+					<div class="technology-images-text-2">
 						<img src="{{ baseUrl }}seastar/images/eye_4k.png" class="img-thumbnail"> 
 						<p>Comprehensively assess physical security threats spread over wide area, with broad and hawk - eye visualization in Ultra High Defination</p>
-						<a href="/eye4k/">Learn More</a>
+						<div class="tech-img-link-2"><a href="/eye4k/">Learn More</a></div>
 					</div>
 					
 				</div>
@@ -97,7 +99,7 @@
 							<img src="{{ baseUrl }}seastar/images/4k_image.png"/>
 							<div class="caption">
 							<div class="explore-title"><h3>WIDE AREA SURVEILLANCE</h3></div>
-							<div class="explore-text">
+							<div class="explore-text explore-text-1">
 								<p>Megapixel arrays create ultra high-resolution panaromic views for extreme wide area surviellance.</p>
 							</div>
 							</div> 
@@ -108,7 +110,7 @@
 						<img src="{{ baseUrl }}seastar/images/4k_image_zoom.png"/>
 						<div class="caption">
 						<div class="explore-title"><h3>VIRTUAL PAN-TILT-ZOOM</h3></div> 
-						<div class="explore-text">
+						<div class="explore-text explore-text-2">
 							<p>Control your view with Digital PTZ controls. Wide and closeup views for detailed assesments of lieve and forensic content.</p>
 						</div> 
 						</div>
