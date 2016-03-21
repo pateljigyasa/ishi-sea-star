@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^eye4k/$', views.eye4k),
     url(r'^video-production/$', views.videoproduction),
     url(r'^game-view/$', views.gameview),
+     url(r'^strive/$', views.strive),
     url(r'^index/$', views.index,name='index'),
      
     

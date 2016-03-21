@@ -110,5 +110,13 @@
 	 
 {% endblock %} 
 
-
+{% block page_usable_javascript %}
+	
+		<script>  
+			$(document).ready(function() {
+				 $(".target-active").find("[href='/video-production/']").parent().addClass("active");
+				 
+			}); 
+		</script>
+{% endblock page_usable_javascript %}   
  

@@ -13,12 +13,12 @@ register = template.Library()
 
 """simple tag to return active if url is current path"""
 @register.simple_tag(takes_context=True)
-def active(context, pattern_or_urlname):
+def active(context, pattern_or_urlname): 
     try:
         pattern = '^' + reverse(pattern_or_urlname)
     except NoReverseMatch:
         pattern = pattern_or_urlname
-    path = context['request'].path
+    path = context['request'].path  
     if re.search(pattern, path):
         return 'active'
     return ''

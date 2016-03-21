@@ -8,6 +8,27 @@ $(document).ready(function() {
 	$('#eye-specs-col4').css("height",$("#eye-specs-col1"). height());
 	$('#eye-specs-col5').css("height",$("#eye-specs-col1").height());
 	
+	$(".various").fancybox({
+		maxWidth	: 1200,
+		maxHeight	: 800,
+		fitToView	: false,
+		width		: '100%',
+		height		: '100%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none', 
+	});
+	$(".fancybox").fancybox({
+		helpers : {
+			overlay : {
+				css : {
+					'background' : 'rgba(58, 42, 45, 1)'
+				}
+			}
+		}
+		});
+	  
 	//$(".video-production-bg").backstretch(video_production_bg_url);
 	//$(".video-image").bg_fit();
 	//$('.col-eq').colequalizer();
@@ -19,7 +40,7 @@ $(document).ready(function() {
 	    //scrollBy(0, -50);
 	     
 	});*/
-	var hashURL = location.hash;
+	/*var hashURL = location.hash;
     if(hashURL != "" && hashURL.length > 1){
         $(window).scrollTop(0);
         $('html').css({display: 'block'});
@@ -31,7 +52,7 @@ $(document).ready(function() {
     function smoothScrollTo() {
     	var navOffset = $('.navbar').height(); 
     	$("#contact-form")[0].scrollIntoView(true);
-    }
+    }*/
     
   /* $('#nav-contact-us').bind('click', function(event){
 	   event.preventDefault(); 

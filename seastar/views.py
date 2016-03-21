@@ -25,6 +25,9 @@ def videoproduction(request):
 def gameview(request): 
     return render(request, 'gameview.html')
 
+def strive(request): 
+    return render(request, 'strive.html')
+
 #Response method for contact which will send mail.
 def contact_response(request): 
     if request.method == 'POST': 

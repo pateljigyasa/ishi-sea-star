@@ -1,6 +1,7 @@
-<!-- Security Page-->
+<!-- Security Page--> 
 {% extends 'base.html' %} 
 {% block content %}  
+
 	<section class="section-fluid contentContainer cloudmate-bg">
 	 	<div class="container">
 		 	<div class="row" >
@@ -114,11 +115,18 @@
 				</div>
 			</div>
 		 </div> 
-	</section>
-	  
-	  
-	 
+	</section>  
 {% endblock %} 
+
+{% block page_usable_javascript %}
+	
+		<script>  
+			$(document).ready(function() {
+				 $(".target-active").find("[href='/security/']").parent().addClass("active");
+				 
+			}); 
+		</script>
+{% endblock page_usable_javascript %}   
 
 
  

@@ -1,0 +1,104 @@
+<!-- Security Page-->
+{% extends 'base.html' %} 
+{% block content %}  
+	<section class="section-fluid contentContainer gameview-production-bg">
+		<section class="gameview-production-overlay">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-md-12 center-col cloudate-main-header" id="topCol">
+		 			<div class="center-top-header">  
+				 		<div class="col-md-5 col-sm-5"><h1>Strive Network</h1></div>
+				 		<div class="col-md-7 col-sm-7"><p>Cover, produce, and stream your games from anywhere in the world</p></div>
+				 	</div>  
+		 		</div>
+	 		</div>
+		</div>
+	</section>
+	</section>
+	
+	 <section style="width:100%;">
+	 	<div class="container center overview">
+		 	<div class="row"> 
+				<div class="col-md-12">
+					<h3 class="row-heading">Overview</h3>
+				</div>
+			</div>
+			<div class="row overview-section-text"> 
+				<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 overview-text">
+					<p>Ultra high-defination 4K camera captures and streams full-scene video of event to the cloud via proprietary edge hardware and software.</p>
+					<p>The Strive online editing studio accesses streaming content from the cloud and provides virtual camera movement over full-scene video to enable remote live production</p>
+					<p>Highly-scalable cloud infrastructure processes and streams produced, interactive content to StriveCast or external services(Youtube, ...)</p> 
+				</div><!--
+				--><div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 vcenter"> 
+					<img   
+					 src="{{ baseUrl }}seastar/images/strive_promo_video.jpg" frameborder="0" allowfullscreen class="img-thumbnail" style="width:100%;height:400px;"/>
+					<a class="various fancybox.iframe" href="https://www.youtube.com/embed/CZshmI4EPkc?autoplay=1"><div class="play-icon-overlay"></div></a>
+				</div> 
+			</div>  
+		</div>
+	</section> 
+	<div class="container-fluid">
+		<div class="row cloudmate-works-row" id="cloudmate-works">  
+			<div class="col-md-12">
+				<h3 class="row-heading">How it Works</h3>
+			</div> 
+		</div>
+	</div>
+	<div class="container center" id="works-section"> 
+		<div class="row cloudmate-works-img">
+			<div class="col-md-12 col-sm-12 col-xs-12"> 
+				 <img src="{{ baseUrl }}seastar/images/strive_process.png" class="img-thumbnail" style="width:100%;"/>
+			</div>	
+		</div>  
+	</div>
+	
+	<section style="width:100%;" class="strive-advantage-section">
+	 	<div class="container center">
+		 	<div class="row"> 
+				<div class="col-md-12">
+					<h4>ADVANTAGES</h4>
+				</div>
+			</div>
+			<div class="row strive-advantage-row"> 
+				<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12  strive-advantage-text">
+					<p>Record and live-stream games, practices and more at the touch of a button</p>
+					<p>Supercharge training with video review and analysis tools</p>
+					<p>Do-It-yourself or leverage our personalized production services</p> 
+					<p>Engagae your fans, students, parents, and alumni with high-quality interactive sports coverage</p> 
+				</div><!--
+				--><div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 vcenter"> 
+					<img   
+					 src="{{ baseUrl }}seastar/images/strive_advantage_video.jpg" frameborder="0" allowfullscreen class="img-thumbnail" style="width:100%;height:400px;"/>
+					<a class="various fancybox.iframe" href="https://www.youtube.com/embed/jG6B6A9-V7Q?autoplay=1"><div class="play-icon-overlay"></div></a>
+				</div> 
+			</div>  
+		</div>
+	</section> 
+	 
+	<section id="exploreus">
+		 <div class="container">
+		 	<div class="row gameview-explore">
+		 		<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+		 			<img src="{{ baseUrl }}seastar/images/strive_logo_2.png" width="200"/> 
+		 			<h6>Explore our work</h6>
+		 			<a href="https://www.strivenetwork.tv">strivenetwork.tv</a>
+		 		</div>
+		 	</div>
+		 </div>
+	</section>
+	  
+	  
+	 
+{% endblock %} 
+
+{% block page_usable_javascript %}
+	
+		<script>  
+			$(document).ready(function() {
+				 $(".target-active").find("[href='/video-production/']").parent().addClass("active");
+				 
+			}); 
+		</script>
+{% endblock page_usable_javascript %}   
+
+ 
