@@ -2,30 +2,28 @@
 {% extends 'base.html' %} 
 {% block content %}  
 
-	<section class="section-fluid contentContainer cloudmate-bg">
-	 	<div class="container">
-		 	<div class="row" >
-		 		<div class="col-md-12 center-col cloudate-main-header" id="topCol">
-		 			<div class="center-top-header">  
-				 		<div class="col-md-4 col-sm-5"><h1>CloudMate</h1></div>
-				 		<div class="col-md-8 col-sm-7"><p>Comprehensive coverage with real-time wide area surveillance solution using high-resolution 4kcameras</p></div>
-				 	</div>  
+	<section class="section-fluid cloudmate-bg ">
+		<div class="gameview-production-overlay">
+		 	<div class="container eye4k-img-text-overlay">
+			 	<div class="row cloudmate-header-text" > 
+			 		<div class="col-md-3 col-sm-3 col-lg-3"><h1>CloudMate</h1></div>
+			 		<div class="col-md-9 col-sm-9 col-lg-9"><p>Comprehensive coverage with real-time wide area surveillance solution using high resolution 4kcameras</p></div>  
 		 		</div>
-	 		</div>
+			</div>
 		</div>
 	</section>
 	 <section style="width:100%;">
 	 	<div class="container center overview">
 		 	<div class="row"> 
 				<div class="col-md-12">
-					<h3 class="row-heading">Overview</h3>
+					<h3 class="row-heading">{{page_data.cloudmate_overview_section_title|safe}}</h3>
 				</div>
 			</div>
 			<div class="row overview-section-text"> 
 				<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 overview-text vcenter">
-					<p>Cloud Mate connects to most 4K UHD cameras as well as existing 720p network cameras, and the Eye4k visualization software, or existing Video Management Systems(VMS) software when longduration, forensic video-review is required.</p>
-					<p>CloudMate passes through 720P camera video while at the same time performing buffered recording of up to 512GB of 4K UHD video.</p>
-					<p>CloudMate and the Eye4K visualization software provide short-term video review capability at 4K UHD resolution while displaying live video at 720P resolution.</p> 
+					<p>{{page_data.cloudmate_overview_section_para_1|safe}}</p>
+					<p>{{page_data.cloudmate_overview_section_para_2|safe}}</p>
+					<p>{{page_data.cloudmate_overview_section_para_3|safe}}</p> 
 				</div><!--
 				--><div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 vcenter">
 					<img src="{{ baseUrl }}seastar/images/cloudmate.png" class="img-thumbnail" width="400"/>
@@ -37,7 +35,7 @@
 	<div class="container-fluid">
 		<div class="row cloudmate-works-row" id="cloudmate-works">  
 			<div class="col-md-12">
-				<h3 class="row-heading">How it Works</h3>
+				<h3 class="row-heading">{{page_data.cloudmate_how_it_works_title|safe}}</h3>
 			</div> 
 		</div>
 	</div>
@@ -51,12 +49,14 @@
 	<div class="contanier-fluid">
 		<div class="row cloudmate-advantage-section center"> 
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				 <h4>ADVANTAGES</h4>
-				 <p>Enables real-time and post-event assessment and analysis</p>
-				 <p>Integrates with most POE 4K and standard network cameras</p>
-				 <p>Wireless or Wired interface for flexible deployment</p>
-				 <p>Eliminates the need to install new high-bandwidth video infrastructure to exploit 4K UHD video</p>
-				 <p>Dramatically reduces ongoing over-the-air data transmission costs</p> 
+				 <h4>{{page_data.cloudmate_advantage_title|safe}}</h4>
+				 <div class="cloudemate-advantage-extra-spacing">
+					 <p>{{page_data.cloudmate_advantage_para_1|safe}}</p>
+					 <p>{{page_data.cloudmate_advantage_para_2|safe}}</p>
+					 <p>{{page_data.cloudmate_advantage_para_3|safe}}</p>
+					 <p>{{page_data.cloudmate_advantage_para_4|safe}}</p>
+					 <p>{{page_data.cloudmate_advantage_para_5|safe}}</p> 
+				</div>
 			</div> 
 		</div> 
 	</div>	
@@ -64,52 +64,52 @@
 		<div class="container">
 			<div class="row"> 
 				<div class="col-md-12">
-					<h3 class="row-heading">TECHNICAL SPECS</h3>
+					<h3 class="row-heading">{{page_data.cloudmate_advantage_tech_spec_title|safe}}</h3>
 				</div>
 			</div>
 		 </div> 
 		 <div class="container">
 			<div class="row cloudmate-technical-specs col-eq"> 
 				<div class="col-md-6 col-sm-6 col-xs-12" id="technical-specs-col1">
-					<div class="techincal-specs-header"><h4>Compatibility</h4></div>
+					<div class="techincal-specs-header"><h4>{{page_data.cloudmate_advantage_tech_spec_title1|safe}}</h4></div>
 					<div class="techincal-specs-list">
 						<ul>
-							<li>Supports Power-Over-Ethernet(POE) off-the-shelf cameras: Axis, Arecont, Avigilon, Sony</li>
-							<li>Compatible with most Video Management System(VMS) and Eye4K Visualization Software </li>
-							<li>Seamleass pass-through port connection to camera</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title1_pt1|safe}}</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title1_pt2|safe}}</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title1_pt3|safe}}</li>
 						</ul>
 					</div>
 				</div> 
 				<div class="col-md-6 col-sm-6 col-xs-12">
-					<div class="techincal-specs-header"><h4>Connectivity</h4></div>
+					<div class="techincal-specs-header"><h4>{{page_data.cloudmate_advantage_tech_spec_title2|safe}}</h4></div>
 					<div class="techincal-specs-list">
 						<ul>
-							<li>POE for Camera</li>
-							<li>RJ45 Ethernet</li>
-							<li>USB 2.0</li>
-							<li>WiFi with external antenna</li>
-							<li>Support external over-the-air data Aircard</li>
-							<li>3.5mm stereo Audio Input</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title2_pt1|safe}}</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title2_pt2|safe}}</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title2_pt3|safe}}</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title2_pt4|safe}}</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title2_pt5|safe}}</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title2_pt6|safe}}</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="row  cloudmate-technical-specs"> 
 				<div class="col-md-6 col-sm-6 col-xs-12" id="technical-specs-col3">
-					<div class="techincal-specs-header"><h4>Storage</h4></div>
+					<div class="techincal-specs-header"><h4>{{page_data.cloudmate_advantage_tech_spec_title3|safe}}</h4></div>
 					<div class="techincal-specs-list"> 
 						<ul>
-							<li>Online access to 10 seconds of buffered 4K UHD video</li>
-							<li>Buffered storage and off-line access to 512Gb of 4K UHD video - up to 2 days</li> 
+							<li>{{page_data.cloudmate_advantage_tech_spec_title3_pt1|safe}}</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title3_pt2|safe}}</li> 
 						</ul>
 					</div>
 				</div> 
 				<div class="col-md-6 col-sm-6 col-xs-12" id="technical-specs-col4">
-					<div class="techincal-specs-header"><h4>Power & Dimensions</h4></div>
+					<div class="techincal-specs-header"><h4>{{page_data.cloudmate_advantage_tech_spec_title4|safe}}</h4></div>
 					<div class="techincal-specs-list">
 						<ul>
-							<li>48VDC, 0.625A (110VAC adapter included)</li>
-							<li>6.25&#8221; x 4.5&#8221; x 2.5&#8221;</li> 
+							<li>{{page_data.cloudmate_advantage_tech_spec_title4_pt1|safe}}</li>
+							<li>{{page_data.cloudmate_advantage_tech_spec_title4_pt2|safe}}</li> 
 						</ul>
 					</div>
 				</div>

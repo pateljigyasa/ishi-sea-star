@@ -1,3 +1,7 @@
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
 $(document).ready(function() {
 	$(".contentContainer").css("min-height",$(window).height()); 
 	$("#topCol").css("height",$(window).height());  
@@ -27,7 +31,12 @@ $(document).ready(function() {
 				}
 			}
 		}
-		});
+	});
+	 
+
+	//paste this code under the head tag or in a separate js file.
+		// Wait for window load
+	
 	  
 	//$(".video-production-bg").backstretch(video_production_bg_url);
 	//$(".video-image").bg_fit();

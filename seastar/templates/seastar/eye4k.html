@@ -1,34 +1,32 @@
 <!-- Security Page-->
 {% extends 'base.html' %} 
 {% block content %}  
-	<section class="section-fluid contentContainer eye4k-bg">
-	 	<div class="container">
-		 	<div class="row" >
-		 		<div class="col-md-12 center-col cloudate-main-header" id="topCol">
-		 			<div class="center-top-header">  
-				 		<div class="col-md-4 col-sm-5"><h1>Eye 4K</h1></div>
-				 		<div class="col-md-8 col-sm-7"><p>Ultra HD recording & visualization over Bandwidth constrained networks</p></div>
-				 	</div>  
+	<section class="section-fluid eye4k-bg">
+		<div class="gameview-production-overlay">
+		 	<div class="container eye4k-img-text-overlay">
+			 	<div class="row eye4k-header-text" > 
+			 		<div class="col-md-3 col-sm-3"><h1>Eye 4K</h1></div>
+			 		<div class="col-md-9 col-sm-9"><p>Ultra HD recording & visualization over Bandwidth constrained networks</p></div>  
 		 		</div>
-	 		</div>
+			</div>
 		</div>
 	</section>
 	 <section style="width:100%;">
 	 	<div class="container center overview">
 		 	<div class="row"> 
 				<div class="col-md-12">
-					<h3 class="row-heading">Overview</h3>
+					<h3 class="row-heading">{{page_data.eye4k_overview_section_title|safe}}</h3>
 				</div>
 			</div>
 			<div class="row overview-section-text"> 
-				<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 overview-text vcenter">
-					<p>Eye4K integrates Ultra High Defination(UHD) 4K and standard 720P cameras to capture and record a loss-less view.</p>
-					<p>Eye4K displays an interactive panaromic view that can be indiviually controlled. Gain a big-picture view of any solution, zoom and tag areas of interest.</p>
-					<p>Postevent analysis can goback in time and virtually pan tilt and zoom into the recording of the even, to improve response protocols.</p> 
+				<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 overview-text vtop">
+					<p>{{page_data.eye4k_overview_section_para_1|safe}}</p>
+					<p>{{page_data.eye4k_overview_section_para_2|safe}}</p>
+					<p>{{page_data.eye4k_overview_section_para_3|safe}}</p> 
 				</div><!--
-				--><div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 vcenter overview-col-2-text">
-					<img src="{{ baseUrl }}seastar/images/4k_image_zoom.png" class="img-thumbnail" style="width:100%;"/>
-					<p>Eye4K is a standalone visualization software solution, but it can be connected to the campanion SeaStar CloudMate unit as well as third party Video Management System (VMS) software.</p>
+				--><div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 vtop overview-col-2-text">
+					<img src="{{ baseUrl }}seastar/images/4k_zoom_image_2.png" class="img-thumbnail" style="width:100%;"/>
+					<p>{{page_data.eye4k_overview_under_image_para|safe}}</p>
 				</div>
 				 
 			</div>  
@@ -37,28 +35,30 @@
 	<div class="container-fluid">
 		<div class="row cloudmate-works-row" id="cloudmate-works">  
 			<div class="col-md-12">
-				<h3 class="row-heading">Experience Eye 4K</h3>
-				<p class="eye-4k-sub-heading">Click on a locations on the map to view</p>
+				<h3 class="row-heading">{{page_data.eye4k_experience_section_title|safe}}</h3>
+				<p class="eye-4k-sub-heading">{{page_data.eye4k_experience_section_subtitle|safe}}</p>
 			</div> 
 		</div>
 	</div>
 	<div class="container center" id="works-section"> 
 		<div class="row cloudmate-works-img">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				 <img src="{{ baseUrl }}seastar/images/cloudmate_process.png" class="img-thumbnail"/>
+				 <img src="{{ baseUrl }}seastar/images/cloudmate_process.png" class="img-thumbnail"  style="width:100%;"/>
 			</div>	
 		</div> 
 	</div>
 	<div class="contanier-fluid">
 		<div class="row cloudmate-advantage-section center"> 
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				 <h4>ADVANTAGES</h4>
-				 <p>Reduces the number of cameras and the required bandwidth</p>
-				 <p>Enables real-time and post-event assessment and analysis</p>
-				 <p>Wide area surveillance with hawk-eye assessment</p>
-				 <p>Comprehensive situational awareness with multiple stackholders</p>
-				 <p>Fully interactive live, forensic and post-event review</p> 
-				 <p>Ultra high definition wide area surveillance</p> 
+				 <h4>{{page_data.eye4k_advantage_title|safe}}</h4>
+				 <div class="cloudemate-advantage-extra-spacing">
+					 <p>{{page_data.eye4k_advantage_para_1|safe}}</p>
+					 <p>{{page_data.eye4k_advantage_para_2|safe}}</p>
+					 <p>{{page_data.eye4k_advantage_para_3|safe}}</p>
+					 <p>{{page_data.eye4k_advantage_para_4|safe}}</p>
+					 <p>{{page_data.eye4k_advantage_para_5|safe}}</p> 
+					 <p>{{page_data.eye4k_advantage_para_6|safe}}</p> 
+				</div>
 			</div> 
 		</div> 
 	</div>	
@@ -70,40 +70,40 @@
 				</div>
 			</div>
 		 </div> 
-		 <div class="container">
+		<div class="container">
 			<div class="row eye4k-technical-specs col-eq"> 
 				<div class="col-md-4 col-sm-4 col-xs-12" id="eye-specs-col1">
-					<div class="techincal-specs-header"><h4>Capture & Recording</h4></div>
+					<div class="techincal-specs-header"><h4>{{page_data.eye4k_tech_specs_title1|safe}}</h4></div>
 					<div class="techincal-specs-list">
 						<ul>
-							<li>Supports MJPEG, MPEG, H.264 compression</li>
-							<li>Full motion video: 12 to 30 FPS</li>
-							<li>Off-the-shelf cameras: Axis, Arecont, Avigilon, Sony</li>
-							<li>Cloud and local NVRs for multi week recordings</li>
-							<li>Up to 4K resolution cameras</li>
-							<li>Supports CloudMate for cloud recording & streaming</li>
+							<li>{{page_data.eye4k_tech_specs_title1_pt1|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title1_pt2|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title1_pt3|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title1_pt4|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title1_pt5|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title1_pt6|safe}}</li>
 						</ul>
 					</div>
 				</div> 
 				<div class="col-md-4 col-sm-4 col-xs-12">
-					<div class="techincal-specs-header"><h4> Video Delivery</h4></div>
+					<div class="techincal-specs-header"><h4>{{page_data.eye4k_tech_specs_title2|safe}}</h4></div>
 					<div class="techincal-specs-list">
 						<ul>
-							<li>Multi-format transcoding</li>
-							<li>Multi-resolution streaming</li>
-							<li>Support Pcs, tablet and smartphone clients</li>
-							<li>Region of interest selection and navigation</li> 
+							<li>{{page_data.eye4k_tech_specs_title2_pt1|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title2_pt2|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title2_pt3|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title2_pt4|safe}}</li> 
 						</ul>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-12">
-					<div class="techincal-specs-header"><h4>Administration</h4></div>
+					<div class="techincal-specs-header"><h4>{{page_data.eye4k_tech_specs_title3|safe}}</h4></div>
 					<div class="techincal-specs-list">
 						<ul>
-							<li>Customizable visualization templates</li>
-							<li>Camera & recording management</li>
-							<li>Thid-party analytics integration</li>
-							<li>Role based access</li> 
+							<li>{{page_data.eye4k_tech_specs_title3_pt1|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title3_pt2|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title3_pt3|safe}}</li>
+							<li>{{page_data.eye4k_tech_specs_title3_pt4|safe}}</li> 
 						</ul>
 					</div>
 				</div>
@@ -111,45 +111,45 @@
 			<div class="row  eye4k-technical-specs"> 
 				<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 hidden-xs">
 					<div class="col-md-6 col-sm-6 col-xs-12" id="eye-specs-col4">
-						<div class="techincal-specs-header"><h4>Storage</h4></div>
+						<div class="techincal-specs-header"><h4>{{page_data.eye4k_tech_specs_title4|safe}}</h4></div>
 						<div class="techincal-specs-list"> 
 							<ul>
-								<li>Customizable visualization templates</li>
-								<li>Camera & recording management</li>
-								<li>Thid-party analytics integration</li>
-								<li>Role based access</li>
+								<li>{{page_data.eye4k_tech_specs_title4_pt1|safe}}</li>
+								<li>{{page_data.eye4k_tech_specs_title4_pt2|safe}}</li>
+								<li>{{page_data.eye4k_tech_specs_title4_pt3|safe}}</li>
+								<li>{{page_data.eye4k_tech_specs_title4_pt4|safe}}</li>
 							</ul>
 						</div>
 					</div> 
 					<div class="col-md-6 col-sm-6 col-xs-12" id="eye-specs-col5">
-						<div class="techincal-specs-header"><h4>Data Protection</h4></div>
+						<div class="techincal-specs-header"><h4>{{page_data.eye4k_tech_specs_title5|safe}}</h4></div>
 						<div class="techincal-specs-list">
 							<ul>
-								<li>Failover support</li>
-								<li>Login based access</li> 
-								<li>Secure stream access</li> 
+								<li>{{page_data.eye4k_tech_specs_title5_pt1|safe}}</li>
+								<li>{{page_data.eye4k_tech_specs_title5_pt2|safe}}</li> 
+								<li>{{page_data.eye4k_tech_specs_title5_pt3|safe}}</li> 
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12 hidden-lg hidden-md hidden-sm" id="eye-specs-col4">
-						<div class="techincal-specs-header"><h4>Storage</h4></div>
+						<div class="techincal-specs-header"><h4>{{page_data.eye4k_tech_specs_title4|safe}}</h4></div>
 						<div class="techincal-specs-list"> 
 							<ul>
-								<li>Customizable visualization templates</li>
-								<li>Camera & recording management</li>
-								<li>Thid-party analytics integration</li>
-								<li>Role based access</li>
+								<li>{{page_data.eye4k_tech_specs_title4_pt1|safe}}</li>
+								<li>{{page_data.eye4k_tech_specs_title4_pt2|safe}}</li>
+								<li>{{page_data.eye4k_tech_specs_title4_pt3|safe}}</li>
+								<li>{{page_data.eye4k_tech_specs_title4_pt4|safe}}</li>
 							</ul>
 						</div>
 					</div> 
 					<div class="col-md-6 col-sm-6 col-xs-12 hidden-lg hidden-md hidden-sm" id="eye-specs-col5">
-						<div class="techincal-specs-header"><h4>Data Protection</h4></div>
+						<div class="techincal-specs-header"><h4>{{page_data.eye4k_tech_specs_title5|safe}}</h4></div>
 						<div class="techincal-specs-list">
 							<ul>
-								<li>Failover support</li>
-								<li>Login based access</li> 
-								<li>Secure stream access</li> 
+								<li>{{page_data.eye4k_tech_specs_title5_pt1|safe}}</li>
+								<li>{{page_data.eye4k_tech_specs_title5_pt2|safe}}</li> 
+								<li>{{page_data.eye4k_tech_specs_title5_pt3|safe}}</li> 
 							</ul>
 						</div>
 				</div>

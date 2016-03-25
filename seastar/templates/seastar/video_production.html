@@ -3,23 +3,18 @@
 {% block content %}  
 <script>
     //var video_production_bg_url = "{{ baseUrl }}seastar/images/production_background.png";
-</script>
-
- <section class="section-fluid contentContainer video-production-bg">
-	<section class="video-production-overlay ">
-	 	<div class="container">
-		 	<div class="row">
-		 		<div class="col-md-12 col-xs-12" id="topCol"> 
-			 		<div class="col-md-5 col-md-offset-5 col-sm-6 col-sm-offset-5 col-xs-12 video-prod-text-overlay" >  
-						<h1 class="hidden-lg">Advance Video Production</h1> 
-						<h1 class="hidden-sm hidden-xs hidden-md">Advance <br/>Video Production</h1> 
-					</div> 
-		 		</div>
-	 		</div>
-		</div>
+</script> 
+ 	<section class="video-production-bg" style="width:100%;"> 
+ 		<div class="video-production-overlay">
+		 	<div class="container video-prod-text-overlay" >
+		 		<div class = "row"> 
+				 		<div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12" >  
+								<h1>Advance Video Production</h1> 
+						</div>
+					</div>
+			 	</div> 
+			</div> 
 	</section>
-</section>
-
 <section style="width:100%;">
 	 	<div class="container video-prod-overview">
 			<div class="row "> 
@@ -27,9 +22,11 @@
 					<img src="{{ baseUrl }}seastar/images/strive_thumbnail_new.jpeg" class="img-thumbnail"/> 
 				</div><!--
 				--><div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 vtop video-prod-overview-txt">
+					<a href="/strive/">
 					<img src="{{ baseUrl }}seastar/images/strive_logo_2.png" class="img-thumbnail" width="200"/> 
-					<p>Cutting-edge broadcasting & production solution for high schools & sports teams.</p>
-					<a href="/strive/">Learn More</a>
+					<p>{{page_data.video_strive_para_1|safe}}</p>
+					{{page_data.video_strive_link_1|safe}}
+					</a>
 				</div> 
 			</div>
 			<div class="row video-prod-overview-2-row">
@@ -37,9 +34,11 @@
 					<img src="{{ baseUrl }}seastar/images/gameview_thumbnail_new.jpeg" class="img-thumbnail"/> 
 				</div><!--
 				--><div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 vtop video-prod-overview-txt">
+					<a href="/game-view/">
 					<img src="{{ baseUrl }}seastar/images/gameview_logo_2.png" class="img-thumbnail" width="300"/> 
-					<p>Live professional broadcasting solution with HD cameras and support for a wide variety of sports packages, graphics and animations.</p>
-					<a href="/game-view/">Learn More</a>
+					<p>{{page_data.video_gameview_para_1|safe}}</p>
+					{{page_data.video_gameview_link_1|safe}}
+					</a>
 				</div> 
 			</div>  
 		</div>
@@ -49,9 +48,9 @@
 	 <div class="container">
 	 	<div class="row ">
 	 		<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-	 			<img src="{{ baseUrl }}seastar/images/strive_logo_white.png" width="200"/> 
-	 			<h6>Check Us Out</h6>
-	 			<p>Explore&nbsp;<a href="https://www.strivenetwork.tv">strivenetwork.tv</a></p>
+	 			<img src="{{ baseUrl }}seastar/images/strive_new_logo_white.png" width="200"/> 
+	 			<h6>{{page_data.video_check_out_title|safe}}</h6>
+	 			<p>{{page_data.video_check_out_text|safe}}&nbsp;<a href="https://www.strivenetwork.tv">{{page_data.video_check_out_link_text|safe}}</a></p>
 	 		</div>
 	 	</div>
 	 </div>
@@ -64,9 +63,9 @@
 						<div class="thumbnail">
 							<img src="{{ baseUrl }}seastar/images/remote_production_2.jpeg"/>
 							<div class="caption">
-							<div class="explore-title"><h3>REMOTE VIDEO PRODUCTION</h3></div>
+							<div class="explore-title"><h3>{{page_data.video_explore_image_title_1|safe}}</h3></div>
 							<div class="explore-text">
-								<p>Follow the action and frames hots from anywhere with a laptop or tablet.</p>
+								<p>{{page_data.video_explore_image_entry_1|safe}}</p>
 							</div>
 							</div> 
 						</div> 
@@ -75,9 +74,9 @@
 					<div class="thumbnail">
 						<img src="{{ baseUrl }}seastar/images/4k_zoom_image_2.png"/>
 						<div class="caption">
-						<div class="explore-title"><h3>SCALABLE BRODCAT SOLUTIONS</h3></div> 
+						<div class="explore-title"><h3>{{page_data.video_explore_image_title_2|safe}}</h3></div> 
 						<div class="explore-text">
-							<p>Broadcast solutions leveraging over-the-internet production and interactive live webcasting.</p>
+							<p>{{page_data.video_explore_image_entry_2|safe}}</p>
 						</div> 
 						</div>
 						</div> 
@@ -86,9 +85,9 @@
 					 	<div class="thumbnail">
 					 		<img src="{{ baseUrl }}seastar/images/interactive_content_2.jpeg"/>
 						 	<div class="caption">
-							 <div class="explore-title"><h3>INERACTIVE CONTENT</h3></div> 
+							 <div class="explore-title"><h3>{{page_data.video_explore_image_title_3|safe}}</h3></div> 
 							<div class="explore-text">
-								<p>Interactive scoreboards, tag & share game shots, create your own highlight and replays.</p>
+								<p>{{page_data.video_explore_image_entry_3|safe}}</p>
 							</div> 
 							</div>
 						</div>

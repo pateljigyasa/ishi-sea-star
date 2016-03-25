@@ -1,33 +1,30 @@
 <!-- Security Page-->
 {% extends 'base.html' %} 
-{% block content %}  
-	<section class="section-fluid contentContainer gameview-production-bg">
-		<section class="gameview-production-overlay">
-	 	<div class="container">
-		 	<div class="row">
-		 		<div class="col-md-12 center-col cloudate-main-header" id="topCol">
-		 			<div class="center-top-header">  
-				 		<div class="col-md-4 col-sm-5"><h1>Gameview</h1></div>
-				 		<div class="col-md-8 col-sm-7"><p>Make custom cuts and highlight clips on 4K footage using the power of the cloud</p></div>
-				 	</div>  
+{% block content %}   
+	
+	<section class="section-fluid gameview-production-bg ">
+		<div class="gameview-production-overlay">
+		 	<div class="container eye4k-img-text-overlay">
+			 	<div class="row eye4k-header-text" > 
+			 		<div class="col-md-3 col-sm-3 col-lg-3"><h1>Gameview</h1></div>
+			 		<div class="col-md-9 col-sm-9 col-lg-9"><p>Make custom cuts and highlight clips on 4K footage using the power of the cloud</p></div>  
 		 		</div>
-	 		</div>
+			</div>
 		</div>
-	</section>
 	</section>
 	
 	 <section style="width:100%;">
 	 	<div class="container center overview">
 		 	<div class="row"> 
 				<div class="col-md-12">
-					<h3 class="row-heading">Overview</h3>
+					<h3 class="row-heading">{{page_data.gameview_overview_title|safe}}</h3>
 				</div>
 			</div>
 			<div class="row overview-section-text"> 
 				<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 overview-text">
-					<p>Gameview editing studio is a simpler way of creating custom footage. Access game footage via the cloud, make edits and clips of whats important to you and your team.</p>
-					<p>Athletes can create highlight reels for talent scouts, or an analysis video to improve game performance.</p>
-					<p> Coaches can easily access, edit and share game or practice footage with their teams and even specific players.</p> 
+					<p>{{page_data.gameview_overview_para_1|safe}}</p>
+					<p>{{page_data.gameview_overview_para_2|safe}}</p>
+					<p>{{page_data.gameview_overview_para_3|safe}} </p> 
 				</div><!--
 				--><div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 vcenter">
 					<img src="{{ baseUrl }}seastar/images/gameview_thumbnail_new.jpeg" class="img-thumbnail" style="width:100%;height:400px;"/>
@@ -39,7 +36,7 @@
 	<div class="container-fluid">
 		<div class="row cloudmate-works-row" id="cloudmate-works">  
 			<div class="col-md-12">
-				<h3 class="row-heading">How it Works</h3>
+				<h3 class="row-heading">{{page_data.gameview_how_it_works_title|safe}}</h3>
 			</div> 
 		</div>
 	</div>
@@ -49,31 +46,31 @@
 				 <img src="{{ baseUrl }}seastar/images/gameview_process_2.png" class="img-thumbnail" style="width:100%;"/>
 			</div>	
 		</div> 
-		<div class="row col-eq"> 
+		<div class="row col-eq gameview-feature-row"> 
 				<div class="col-md-4 col-xs-12 gameview-works-feature">
-					<div class="gameview-works-feature-title"><h4>DIRECTOR</h4></div>
+					<div class="gameview-works-feature-title"><h4>{{page_data.gameview_works_title_1|safe}}</h4></div>
 					<div class="gameview-works-feature-text">
-						<p>Connect up to 8 cameras views</p>
-						<p>Multi-camera switching with a click of your mouse or hotkeys</p>
-						<p>Replay and Clip tagging</p>
-						<p>Live Picture-in-Picture</p>
+						<p>{{page_data.gameview_works_title1_pt1|safe}}</p>
+						<p>{{page_data.gameview_works_title1_pt2|safe}}</p>
+						<p>{{page_data.gameview_works_title1_pt3|safe}}</p>
+						<p>{{page_data.gameview_works_title1_pt4|safe}}</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-xs-12 gameview-works-feature">
-					<div class="gameview-works-feature-title"><h4>EDITOR</h4></div>
+					<div class="gameview-works-feature-title"><h4>{{page_data.gameview_works_title_2|safe}}</h4></div>
 					<div class="gameview-works-feature-text">
-						<p>Control graphics, videos, logos, images,commericals, animation, PIP and more</p>
-						<p>Scoring Control</p>
-						<p>Craft your own custom broadcast and stream with ease</p> 
+						<p>{{page_data.gameview_works_title2_pt1|safe}}</p>
+						<p>{{page_data.gameview_works_title2_pt2|safe}}</p>
+						<p>{{page_data.gameview_works_title2_pt3|safe}}</p> 
 					</div>
 					
 				</div>
 				<div class="col-md-4 col-xs-12 gameview-works-feature">
-					<div class="gameview-works-feature-title"><h4>MEDIA STUDIO</h4></div>
+					<div class="gameview-works-feature-title"><h4>{{page_data.gameview_works_title_3|safe}}</h4></div>
 					<div class="gameview-works-feature-text">
-						<p>Pile up Media Studio with logos, images, videos, PIP and more</p>
-						<p>Remote scoring from smartphone or tablet.</p>
-						<p>Import broadcast elements using your mobile device.</p> 
+						<p>{{page_data.gameview_works_title3_pt1|safe}}</p>
+						<p>{{page_data.gameview_works_title3_pt2|safe}}</p>
+						<p>{{page_data.gameview_works_title3_pt3|safe}}</p> 
 					</div>
 				</div> 
 		</div>
@@ -81,26 +78,27 @@
 	<div class="contanier-fluid">
 		<div class="row gameview-advantage-section center"> 
 			<div class="col-md-6 col-md-offset-3  col-sm-8 col-sm-offset-2 col-xs-12">
-				 <h4>ADVANTAGES</h4>
-				 <h5>Community Engagement</h5>
-				 <p>A Gameview broadcast can be custom designed to look and feel like your organization or team.</p>
-				 <h5>Brand Showcase</h5>
-				 <p>Through the use of seamless integration with you website, commentary, graphics, video, and stunning quality, we will grow and engage your community.</p>
-				 <h5>Effort Management</h5>
-				 <p>One Person can produce a proffesional quality broadcast complete with the same features as a televised event. No stress, no hassle, no large crew to manage.</p>
-				 <h5>Feature Rich Experience</h5>
-				 <p>The technology ensures sound and picture quality, mobile compatibilty, and multiple engles for a complete viewer experience. Add to that introductory
-				 and intermittent videos, highlights, commentary, and the broadcast will ignite pride within the organization.</p>
+				 <h4>{{page_data.gameview_advantage_section_title|safe}}</h4>
+				 <div class="cloudemate-advantage-extra-spacing">
+				 <h5>{{page_data.gameview_advantage_section_subtitle_1|safe}}</h5>
+				 <p>{{page_data.gameview_advantage_section_para_1|safe}}</p>
+				 <h5>{{page_data.gameview_advantage_section_subtitle_2|safe}}</h5>
+				 <p>{{page_data.gameview_advantage_section_para_2|safe}}</p>
+				 <h5>{{page_data.gameview_advantage_section_subtitle_3|safe}}</h5>
+				 <p>{{page_data.gameview_advantage_section_para_3|safe}}</p>
+				 <h5>{{page_data.gameview_advantage_section_subtitle_4|safe}}</h5>
+				 <p>{{page_data.gameview_advantage_section_para_4|safe}}</p>
+				 </div>
 			</div> 
 		</div> 
 	</div>	
-	<section id="exploreus">
+	<section class="gameview-explore-section">
 		 <div class="container">
 		 	<div class="row gameview-explore">
 		 		<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
 		 			<img src="{{ baseUrl }}seastar/images/strive_logo_2.png" width="200"/> 
-		 			<h6>Explore our work</h6>
-		 			<a href="https://www.strivenetwork.tv">strivenetwork.tv</a>
+		 			<h6>{{page_data.gameview_explore_work_section_title|safe}}</h6>
+		 			<a href="https://www.strivenetwork.tv">{{page_data.gameview_explore_work_section_link_text|safe}}</a>
 		 		</div>
 		 	</div>
 		 </div>

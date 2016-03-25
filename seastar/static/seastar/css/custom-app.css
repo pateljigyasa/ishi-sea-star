@@ -108,8 +108,22 @@
 body{
     font-family: SourceSansPro, sans-serif !important;  
     overflow-x: hidden;  
+    padding-top:70px;
 } 
-
+ 
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url("../images/preloader.gif") center no-repeat #fff;
+}
  
 
 /* Extra small devices (phones, less than 768px) */
@@ -125,6 +139,9 @@ body{
 .navbar-brand {
   padding: 0px;
   
+}
+.navbar-toggle {
+	margin-top:20px;
 }
 
 a:focus {
@@ -543,7 +560,7 @@ a:focus {
 	padding:40px 0 20px 0;
 }
 .cloudmate-works-row {
-	padding:65px 0 65px 0;
+	padding:40px 0 40px 0;
 }
 .technology-images-row { 
 	padding-top:40px;
@@ -561,9 +578,11 @@ a:focus {
 	font-size:18px;
 	 
 }
-.technology-images-text-1 a, .technology-images-text-2 a{
-	color: #871719;
-	text-decoration:none;  
+.technology-images-col-1 a, .technology-images-col-2 a {
+	text-decoration:none;
+}
+.tech-img-link-1, .tech-img-link-2{
+	color: #871719; 
 	font-size:18px;
 }
 .technology-images-col-1 {
@@ -598,7 +617,7 @@ a:focus {
 	padding:30px 0 30px 0;
 }
 .strive-advantage-row {
-	padding:40px 0 40px 0;
+	padding:60px 0 60px 0;
 }
 .cloudmate-advantage-section h4,.gameview-advantage-section h4, .strive-advantage-section h4 {
 	color:#ffffff;
@@ -637,6 +656,7 @@ a:focus {
 	font-weight: 600;
     line-height: 1.388; 
     color: #871719 !important;
+    text-transform:uppercase;
 }
 
 .explore-text p{  
@@ -668,28 +688,37 @@ a:focus {
 	color:#d3ae00;
 }
 .cloudmate-bg {
-	background-image:url('../images/cloudmate_header_image.png');
-	background-repeat:no-repeat;
-	background-size:cover;
-	width:100%;
+	background-image:url("../images/cloudmate_bg.png");
+	background-repeat:no-repeat; 
+	background-size:cover;   
+	background-position:center;
+	padding-bottom:41.81%;
+	position:relative;
 }
 .eye4k-bg {
-	background-image:url('../images/security_background_new.png');
-	background-repeat:no-repeat;
-	background-size:cover;
-	width:100%;
+	background-image:url("../images/security_background_new.png");
+	background-repeat:no-repeat; 
+	background-size:cover;   
+	background-position:center;
+	padding-bottom:41.81%;
+	position:relative;
 }
 .gameview-production-bg {
-	background-image:url('../images/video_production_bg.jpg');
+	background-image:url('../images/strive_production_bg.png');
 	background-repeat:no-repeat;
 	background-size:cover;
-	width:100%;
+	background-position:center;
+	padding-bottom:66.59%;
+	position:relative;
+	 
 }
 .video-production-bg {
 	background-image:url('../images/production_background.png');
-	background-repeat:no-repeat;
-	background-size:cover;
-	width:100%;
+	background-repeat:no-repeat; 
+	background-size:cover;   
+	background-position:center;
+	padding-bottom:41.95%;
+	position:relative;
 }
 .gameview-production-overlay {
 	width: 100%;
@@ -707,19 +736,31 @@ a:focus {
     left: 0;
     z-index: 1; 
 }
-.cloudate-main-header h1{
+.eye4k-header-text h1,.cloudmate-header-text h1{
 	color:#ffffff;
-	font-size:60px;
+	font-size:25px;
 	font-weight:900;
 	margin:0;
 	text-align:center;
 }
-.cloudate-main-header p {
+.eye4k-header-text p {
 	color:#ffffff;
-	font-size:30px;
-	font-weight:bold;
+	font-size:22px;
+	font-weight:900;
 	margin:0;
 	text-align:center;
+}
+.cloudmate-header-text p {
+	color:#ffffff;
+	font-size:18px;
+	font-weight:900;
+	margin:0;
+	text-align:center;
+}
+
+.eye4k-img-text-overlay{
+	position:relative;
+	top:20%;   
 }
 .navbar li {
      padding-left:0;
@@ -815,6 +856,7 @@ a:focus {
 	color:#871719;
 	font-size:30px;
 	font-weight:600;
+	text-transform:uppercase;
 }
 .gameview-works-feature-text p {
 	color:#848484;
@@ -827,31 +869,30 @@ a:focus {
 }
 .gameview-explore h6 {
 	color:#871719;
-	font-size:30px;
-	padding-top:40px;
+	font-size:28px;
+	padding-top:10px;
 }
 .gameview-explore a {
 	color:#871719;
-	font-size:28px;
+	font-size:23px;
 	text-decoration:none;
 	font-weight:bold;
 	line-height:.7em;
 }
+
 #works-section {
 	padding-top:60px;
 	padding-bottom:60px;
 }
 .video-prod-text-overlay {
-		position:absolute;
-		top:30%;
-		text-align:center;
-		color:#ffffff; 
-		padding:0;
+		position:relative;
+		top:25%;
+		text-align:center; 
 }
 .video-prod-text-overlay h1{
- 	font-size:48px;
- 	font-weight:900;
- 	padding-right:25px;
+ 	font-size:35px;
+ 	font-weight:900; 
+ 	color:#ffffff;
 }
 .video-prod-overview {
 	padding-top:60px;
@@ -909,7 +950,21 @@ a:focus {
     top: 0;
     z-index: 10;
 }
- 
+.cloudmate-technical-specs {
+		padding-top:60px;
+}
+.gameview-advantage-extra-spacing {
+	padding-top:30px;
+}
+.eye4k-technical-specs,.gameview-feature-row {
+	padding-top:60px;
+} 
+.gameview-explore-section {
+	width:100%;
+	padding:40px 0 20px 0 ;
+	text-align:center;
+	background-color:#f6f6f6;  
+}
 	
  
 
@@ -917,7 +972,14 @@ a:focus {
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
-	  
+	 
+	 body{ 
+    	padding-top:100px;
+	} 
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    	margin-right: 0;
+    	margin-left: 0;
+	}
 	.main-nav-bar .navbar-brand {
 	  height: 100px;
 	}
@@ -979,7 +1041,7 @@ a:focus {
 		 
 	} 
 	.technology-images-text-1 .tech-img-link-1 {
-		padding-top:23px;
+		/*padding-top:23px;*/
 	}
 	.technology-images-col-1 {
 		padding-right:50px;
@@ -1025,6 +1087,7 @@ a:focus {
 	.overview-section-text .col-xs-12:nth-child(2)  {
 		padding-top:0;
 	}
+	
 	.cloudmate-technical-specs .col-sm-6{
 		background-color:#ffffff;
 		padding:0;
@@ -1050,14 +1113,15 @@ a:focus {
 		width:29%;
 	}
 	.video-prod-text-overlay {
-		position:absolute;
-		top:20%;
-		text-align:right;
-		color:#ffffff; 
+		position:relative;
+		top:40%;
+		text-align:right; 
+		 
 	}
 	.video-prod-text-overlay h1{
 	 	font-size:52px;
 	 	font-weight:900;
+	 	color:#ffffff;
 	}
 	.video-prod-overview-txt p {
 		padding-left:60px;
@@ -1068,9 +1132,9 @@ a:focus {
 		margin-top:40px;
 		text-align:right;
 	}
-	.video-prod-overview-txt a {
+	/*.video-prod-overview-txt a {
 		line-height:0;
-	}
+	}*/
 	.video-prod-overview-2-row {
 		padding-top:60px;
 	}
@@ -1082,6 +1146,26 @@ a:focus {
 	}
 	.explore-text-1,.explore-text-2 {
 		margin-top:43px;
+	}
+	.cloudemate-advantage-extra-spacing {
+		padding-top:60px;
+	}
+	.overview-section-text {
+		padding-top:60px;
+	}
+	.eye4k-img-text-overlay{
+		position:relative;
+		top:30%;   
+	}
+	.eye4k-header-text h1,.cloudmate-header-text h1 { 
+		text-align:left;
+		font-size:35px;
+		line-height:1.1;
+	 
+	}
+	.eye4k-header-text p,.cloudmate-header-text p { 
+		text-align:right;
+		font-size:35px;
 	}
 	
 	
@@ -1096,6 +1180,10 @@ a:focus {
 	.main-nav-bar .navbar-brand {
 	  height: 100px;
 	} 
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    	margin-right: 0;
+    	margin-left: 0;
+	}
 	.main-nav-bar .nav >li >a {
 	  padding-top: 30px;
 	  padding-bottom: 20px; 
@@ -1139,10 +1227,10 @@ a:focus {
 		margin-left: 5%;
 	    margin-right: 5%;
 	}
-	.cloudate-main-header h1{ 
+	.eye4k-header-text h1{ 
 		text-align:left;
 	}
-	.cloudate-main-header p { 
+	.eye4k-header-text p { 
 		text-align:right;
 	}
 	.cloudmate-technical-specs .col-md-6{
@@ -1170,15 +1258,15 @@ a:focus {
 		width:29.2%;
 	}
 	.video-prod-text-overlay {
-		position:absolute;
-		top:20%;
-		text-align:right;
-		color:#ffffff;
-		left:14%; 
+		position:relative;
+		top:40%;
+		text-align:right; 
+		 
 	}
 	.video-prod-text-overlay h1{
-	 	font-size:52px;
+	 	font-size:54px;
 	 	font-weight:900;
+	 	color:#ffffff;
 	}
 	.video-prod-overview .video-prod-overview-txt {
 		margin-top:50px;
@@ -1197,12 +1285,30 @@ a:focus {
 	.explore-text-1,.explore-text-2 {
 		margin-top:45px;
 	}
+	.eye4k-img-text-overlay{
+		position:relative;
+		top:30%;   
+	}
+	.eye4k-header-text h1,.cloudmate-header-text h1{ 
+		text-align:left;
+		font-size:54px;
+		line-height:1.1;
+	 
+	}
+	.eye4k-header-text p ,.cloudmate-header-text p{ 
+		text-align:right;
+		font-size:50px;
+	}
 	
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px)  { 
 	
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    	margin-right: 0;
+    	margin-left: 0;
+	}
 	.main-nav-bar .nav >li  {
 		float:none !important;
 		display:inline-block;
@@ -1253,7 +1359,7 @@ a:focus {
 		padding-right:120px;
 	}
 	.technology-images-col-2 {
-		padding-left:130px;
+		/*padding-left:130px;*/
 		padding-top:0;
 	 
 	}
@@ -1292,15 +1398,15 @@ a:focus {
 		width:29.8%;
 	}
 	.video-prod-text-overlay {
-		position:absolute;
-		top:20%;
+		position:relative;
+		top:40%;  
+		padding:0;
 		text-align:right;
-		color:#ffffff;
-		 
 	}
 	.video-prod-text-overlay h1{
-	 	font-size:52px;
+	 	font-size:54px;
 	 	font-weight:900;
+	 	color:#ffffff;
 	}
 	.video-prod-overview-txt p {
 		padding-left:120px;
@@ -1321,7 +1427,7 @@ a:focus {
 		padding:10px 0 10px 10px; 
 	} 
 	.technology-images-text-1 .tech-img-link-1 {
-		margin-top:35px;
+		/*margin-top:35px;*/
 	}
 	.explore-row .col-md-4 {
 		width:31.9%;
@@ -1331,6 +1437,21 @@ a:focus {
 	.explore-text-1,.explore-text-2 {
 		margin-top:40px;
 	}
+	.eye4k-img-text-overlay{
+		position:relative;
+		top:40%;   
+	}
+	.eye4k-header-text h1,.cloudmate-header-text h1{ 
+		text-align:left;
+		font-size:54px;
+		line-height:1.4;
+	 
+	}
+	.eye4k-header-text p,.cloudmate-header-text p { 
+		text-align:right;
+		font-size:54px;
+	}
+	 
 	 
 	 
 	 

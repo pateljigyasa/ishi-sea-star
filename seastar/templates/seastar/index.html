@@ -15,12 +15,10 @@
 		<div class="container about" id="security">
 			<div class="row about-section-text"> 
 				<div class="col-md-12">
-					<h3 class="row-heading">WHO WE ARE</h3>
+					<h3 class="row-heading">{{index_data.index_who_we_are_section_title|safe}}</h3>
 				</div>
 				<div class="col-md-12">
-					<p>Seastar was formed by the partnership of a world-class technical team in the area of real-time video processing, with a premier software development, marketing, and project management team with locations worldwide. Our technical heritage began by the development and deployment of high-resolution, wide-area surveillance solutions for the US Government. We&#8217;ve  built upon these  advanced capabilities to develop solutions for remote surveillance, remote broadcasting and much more.
-
-					</p>
+					<p>{{index_data.index_who_we_are_section_data|safe}}</p>
 				</div> 
 			</div>
 		</div>
@@ -54,10 +52,10 @@
 	<div class="container-fluid video-container" id="video" > 
 		<div class="row"> 
 			<div class="col-md-12">
-				<h3 class="row-heading">Our Video Solutions</h3>
+				<h3 class="row-heading">{{index_data.index_our_video_solutions_section_title|safe}}</h3>
 			</div>
 			<div class="col-sm-10 col-sm-offset-1">
-				<p class="video-sub-heading">All that We&rsquo;ve explored so far!</p>
+				<p class="video-sub-heading">{{index_data.index_our_video_solutions_section_sub_title|safe}}</p>
 			</div>
 		</div>
 	</div>
@@ -68,19 +66,19 @@
 					<div class="thumbnail">
 						<a href="/eye4k/"><img src="{{ baseUrl }}seastar/images/eye4k_logo_2.png"/></a>  
 					</div>
-					<a href="/eye4k/"><div class="video-image-title">4K Mobile Wide Area Surveillance</div></a>   
+					<a href="/eye4k/"><div class="video-image-title">{{index_data.index_our_video_solutions_data_para_1|safe}}</div></a>   
 				</div><!--
 				--><div class="col-sm-4 col-md-4 col-lg-4 video-images vcenter">
 				<div class="thumbnail">
 					<a href="/strive/"><img src="{{ baseUrl }}seastar/images/strive_logo_2.png"/></a>  
 				</div>
-				<a href="/strive/"><div class="video-image-title">The Future of Sports Broadcasting</div></a>    
+				<a href="/strive/"><div class="video-image-title">{{index_data.index_our_video_solutions_data_para_2|safe}}</div></a>    
 				</div><!--  
 				--><div class="col-sm-4 col-md-4 col-lg-4 video-images vcenter">
 					<div class="thumbnail">
 						<a href="/game-view/"><img src="{{ baseUrl }}seastar/images/gameview_logo_2.png"/> </a> 
 					</div> 
-					<a href="/game-view/"><div class="video-image-title">Advanced Video Editing On The Cloud</div></a>  
+					<a href="/game-view/"><div class="video-image-title">{{index_data.index_our_video_solutions_data_para_3|safe}}</div></a>  
 				</div>
 			</div> 
 		</div>
@@ -90,9 +88,8 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<blockquote>
-		    			<p>&#8220;Seastar has been developing video security and surveillance visualization solutions 
-		    			for years. Our core product helps visualize your security environment from an intuitive dashboard. Our goal is to address the explosive growth in the smart and cost effective use of video&#8221;</p>
-		    			<footer>Manoj Agrawal, CEO Seastar Labs.</footer>
+		    			<p>{{index_data.index_our_video_solutions_data_blockquote|safe}}</p>
+		    			<footer>{{index_data.index_our_video_solutions_data_blockquote_footer|safe}}</footer>
 		  			</blockquote>
 				</div> 
 			</div>
@@ -102,19 +99,19 @@
 		<div class="container services" id="services">
 			<div class="row services-section-text"> 
 				<div class="col-md-12">
-					<h3 class="row-heading">Our Services</h3>
+					<h3 class="row-heading">{{index_data.index_our_services_section_title|safe}}</h3>
 				</div>
 				<div class="col-sm-12">
-					<p class="video-sub-heading">Seastar's surveillance solutions are now deployed as standard equipment in next-generation ships for the US Navy. Seastar's first-generation Strive broadcast solutions have been deployed at numerous sports-events providing live streaming of produced video to viewers worldwide.</p>
+					<p class="video-sub-heading">{{index_data.index_our_services_section_data|safe}}</p>
 				</div>
 			</div>
 			<div class="row">
 			  <div class="col-sm-6 col-md-6 col-xs-12 services-images"> 
 				    <div class="services-thumbnail">
 				      <a href="/security/"><div class="services-image service1"></div></a>
-				      <h3 class="service-title"><a href="/security/">Security & Surveillance</h3></a>
+				      <h3 class="service-title"><a href="/security/">{{index_data.index_our_services_section_image_title_1|safe}}</h3></a>
 				      <div class="service-entry"> 
-				        <a href="/security/"><p>Custom Surveillance Solution & Integration</p></a>
+				        <a href="/security/"><p>{{index_data.index_our_services_section_image_entry_1|safe}}</p></a>
 				      </div>
 				    </div>
 			    </a>
@@ -122,9 +119,9 @@
 			  <div class="col-sm-6 col-md-6 col-xs-12 services-images">
 			    <div class="services-thumbnail">
 			    <a href="/video-production/"><div class="services-image service2"></div></a>
-			      <h3 class="service-title"><a href="/video-production/">Video Production</a></h3> 
+			      <h3 class="service-title"><a href="/video-production/">{{index_data.index_our_services_section_image_title_2|safe}}</a></h3> 
 			      <div class="service-entry"> 
-			        <a href="/video-production/"><p>Cutting-edge broadcasting & production solution</p></a> 
+			        <a href="/video-production/"><p>{{index_data.index_our_services_section_image_entry_2|safe}}</p></a> 
 			      </div>
 			    </div>
 			  </div>
@@ -135,7 +132,7 @@
 	<div class="container leadership">
 		<div class="row leadership-section-text"> 
 			<div class="col-md-12">
-				<h3 class="row-heading">Our Leadership</h3>
+				<h3 class="row-heading">{{index_data.index_our_leadership_section_title|safe}}</h3>
 			</div> 
 		</div>
 		
@@ -143,28 +140,28 @@
 			<div class="col-md-4 col-sm-4 col-xs-12 post-col"> 
 				<div class="post">
 					<div class="post-image post1"></div>
-					 <p class="post-title">Dr. Manoj Aggarwal <br/> Founder & CTO</p> 
+					 <p class="post-title">{{index_data.index_our_leadership_section_image_title_1|safe}} <br/> {{index_data.index_our_leadership_section_image_sub_title_1|safe}}</p> 
 					<div class="post-entry">
-						<p>A renowned Ph.D in Electrical Engineering, Inventor and Entrepreneur. Previously a technical manager at SRI International and currently holds 20+ design & utility patents. Manoj has also led projects for various government and security agencies.</p>
+						<p>{{index_data.index_our_leadership_section_image_entry_1|safe}}</p>
 					</div> 
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-12 post-col"> 
 				<div class="post" style="">
 					<div class="post-image post2"></div>
-					 <p class="post-title">Akhil Kumar <br/> VP of Engineering</p> 
+					 <p class="post-title">{{index_data.index_our_leadership_section_image_title_2|safe}}<br/> {{index_data.index_our_leadership_section_image_sub_title_2|safe}}</p> 
 					  
 					<div class="post-entry">
-						<p>A hands on architect, agile expert and IBM veteran with 20 years of experience in creating software products. Akhil specializes in extreme programming, application architecture, cloud computing and image processing.</p>
+						<p>{{index_data.index_our_leadership_section_image_entry_2|safe}}</p>
 					</div> 
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-12 post-col"> 
 				<div class="post" style="">
 					<div class="post-image  post3"></div>
-					 <p class="post-title">Rajiv Sohal <br/>VP of Product</p> 
+					 <p class="post-title">{{index_data.index_our_leadership_section_image_title_3|safe}} <br/>{{index_data.index_our_leadership_section_image_sub_title_3|safe}}</p> 
 					<div class="post-entry">
-						<p>Brings 20+ years of experience in managing and providing technical leadership to enterprise software development initiatives. Rajiv has helped design, build and deliver numerous successful products and services.</p>
+						<p>{{index_data.index_our_leadership_section_image_entry_3|safe}}</p>
 					</div> 
 				</div>
 			</div>
@@ -175,10 +172,10 @@
 			<div class="container ">
 			<div class="row contactus"> 
 				<div class="col-md-12 margin-bottom-10">
-					<h3 class="row-heading">Contact Us</h3>
+					<h3 class="row-heading">{{index_data.index_contact_us_section_title|safe}}</h3>
 				</div> 
 				<div class="col-sm-10 col-sm-offset-1">
-					<p class="contactform-sub-heading">Get in touch to learn about more our offerings.</p>
+					<p class="contactform-sub-heading">{{index_data.index_contact_us_section_sub_title|safe}}</p>
 				</div> 
 			</div>
 				<div class="row contactform"> 

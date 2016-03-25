@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from seastar.forms import ContactForm 
+from seastar.models import Variables
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail
 from django.forms.forms import Form 
@@ -7,26 +8,58 @@ from seastarapp.settings import APP_CONTACTUS_EMAIL_ADDRESS
 # Create your views here.
 #Index view 
 def index(request): 
-    form=ContactForm()
-    return render(request, 'index.html',{'form':form})
+    form=ContactForm() 
+    data_dict={}
+    query_data = Variables.objects.all().filter(key__startswith='index')
+    for data in query_data:
+       data_dict[data.key]= data.value 
+    return render(request, 'index.html',{'form':form,'index_data': data_dict})
 
-def security(request): 
-    return render(request, 'security.html')
+def security(request):
+    data_dict={}
+    query_data = Variables.objects.all().filter(key__startswith='security')
+    for data in query_data:
+       data_dict[data.key]= data.value  
+    return render(request, 'security.html',{'page_data': data_dict})
 
 def cloudmate(request): 
-    return render(request, 'cloudmate.html')
+    data_dict={}
+    query_data = Variables.objects.all().filter(key__startswith='cloudmate')
+    for data in query_data:
+       data_dict[data.key]= data.value
+       
+    return render(request, 'cloudmate.html',{'page_data': data_dict})
 
 def eye4k(request): 
-    return render(request, 'eye4k.html')
+    data_dict={}
+    query_data = Variables.objects.all().filter(key__startswith='eye4k')
+    for data in query_data:
+       data_dict[data.key]= data.value
+    return render(request, 'eye4k.html',{'page_data': data_dict})
 
 def videoproduction(request): 
-    return render(request, 'video_production.html')
+    data_dict={}
+    query_data = Variables.objects.all().filter(key__startswith='video')
+    for data in query_data:
+       data_dict[data.key]= data.value 
+        
+    return render(request, 'video_production.html',{'page_data': data_dict}) 
 
 def gameview(request): 
-    return render(request, 'gameview.html')
+    data_dict={}
+    query_data = Variables.objects.all().filter(key__startswith='gameview')
+    for data in query_data:
+       data_dict[data.key]= data.value
+       
+    return render(request, 'gameview.html',{'page_data': data_dict})
 
 def strive(request): 
-    return render(request, 'strive.html')
+    data_dict={}
+    query_data = Variables.objects.all().filter(key__startswith='strive')
+    for data in query_data:
+       data_dict[data.key]= data.value 
+       
+    return render(request, 'strive.html',{'page_data': data_dict})
 
 #Response method for contact which will send mail.
 def contact_response(request): 
@@ -76,4 +109,8 @@ def contact_response(request):
 #Thankyou template for contact and question  
 def response_thanks(request):
     form=ContactForm()
-    return render(request, 'index.html', {'form':form})
+    data_dict={}
+    query_data = Variables.objects.all().filter(key__startswith='index')
+    for data in query_data:
+       data_dict[data.key]= data.value 
+    return render(request, 'index.html',{'form':form,'index_data': data_dict})

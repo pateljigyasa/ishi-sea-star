@@ -14,7 +14,7 @@
 	 	<div class="container center">
 		 	<div class="row"> 
 				<div class="col-md-12">
-					<h3 class="row-heading">How It Works</h3>
+					<h3 class="row-heading">{{page_data.security_how_it_works_title|safe}}</h3>
 				</div>
 			</div> 
 			<div class="row center security-works-section">  
@@ -34,7 +34,7 @@
 					</div>
 					 
 					<div class="col-sm-2 col-md-2 col-xs-12 vcenter">
-						<h1>Eye4k <br>Software</h1>
+						<h1>{{page_data.security_how_it_works_image_data|safe}}</h1>
 					</div>
 				</div> 
 		</div>
@@ -44,10 +44,10 @@
 	 <div class="container-fluid">
 		<div class="row technology-row" id="technology">  
 			<div class="col-md-12">
-				<h3 class="row-heading">The Technology</h3>
+				<h3 class="row-heading">{{page_data.security_technology_title|safe}}</h3>
 			</div>
 			<div class="col-sm-10 col-sm-offset-1">
-				<p class="technlogy-sub-heading">What we have created.</p>
+				<p class="technlogy-sub-heading">{{page_data.security_technology_sub_title|safe}}</p>
 			</div>
 		</div>
 	</div>
@@ -56,22 +56,24 @@
 			<div class="col-md-12 col-sm-12">
 				<div class="col-sm-6 col-md-6 col-xs-12 technology-images-col-1">
 					<!-- <img src="{{ baseUrl }}seastar/images/cloudmate.png" class="img-thumbnail  hidden-sm hidden-md hidden-lg"/>--> 
-					<img src="{{ baseUrl }}seastar/images/cloudmate_new.png" class="img-thumbnail" width="200"/>
+					<a href="/cloudmate/"><img src="{{ baseUrl }}seastar/images/cloudmate_new.png" class="img-thumbnail" width="200"/>
 					<div class="technology-images-text-1">
 						<img src="{{ baseUrl }}seastar/images/cloudmate_text.png" class="img-thumbnail"> 
-						<p>Exploit 4k UHD resolution video with existing, low-cost 720dp video infrastructure</p>
-						 <div class="tech-img-link-1"><a href="/cloudmate/">Learn More</a></div> 
+						<p>{{page_data.security_technology_image_para_1|safe}}</p>
+						 <div class="tech-img-link-1">{{page_data.security_technology_image_link_text_1|safe}}</div> 
 					</div>
+					</a>
 				</div>
 				<div class="col-sm-6 col-md-6 col-xs-12 technology-images-border-right technology-images-col-2">
-					<img src="{{ baseUrl }}seastar/images/technology_camera_2.png" class="img-thumbnail" width="165"/>
+					<a href="/eye4k/"><img src="{{ baseUrl }}seastar/images/technology_camera_2.png" class="img-thumbnail" width="165"/>
 					<!-- <img src="{{ baseUrl }}seastar/images/technology_camera.png" class="img-thumbnail  hidden-sm hidden-md hidden-lg"/>-->
+					
 					<div class="technology-images-text-2">
 						<img src="{{ baseUrl }}seastar/images/eye_4k.png" class="img-thumbnail"> 
-						<p>Comprehensively assess physical security threats spread over wide area, with broad and hawk - eye visualization in Ultra High Defination</p>
-						<div class="tech-img-link-2"><a href="/eye4k/">Learn More</a></div>
+						<p>{{page_data.security_technology_image_para_2|safe}}</p>
+						<div class="tech-img-link-2">{{page_data.security_technology_image_link_text_2|safe}}</div>
 					</div>
-					
+					</a>
 				</div>
 			</div>	
 		</div>
@@ -79,8 +81,8 @@
 	<div class="contanier-fluid">
 		<div class="row technology-section-quote center">
 			<div class="col-md-10 col-md-offset-1">
-				 <h4>Custom Surveillance Solution &#38; Integrations</h4>
-				 <p>We Build Custom Solutions For Your Buisness.&nbsp;Let Us Design To Meet Your Unique Needs.</p>
+				 <h4>{{page_data.security_technology_para_1|safe}}</h4>
+				 <p>{{page_data.security_technology_para_2|safe}}</p>
 			</div> 
 		</div>	
 	</div>	
@@ -98,9 +100,9 @@
 						<div class="thumbnail">
 							<img src="{{ baseUrl }}seastar/images/4k_image.png"/>
 							<div class="caption">
-							<div class="explore-title"><h3>WIDE AREA SURVEILLANCE</h3></div>
+							<div class="explore-title"><h3>{{page_data.security_explore_image_title_1|safe}}</h3></div>
 							<div class="explore-text explore-text-1">
-								<p>Megapixel arrays create ultra high-resolution panaromic views for extreme wide area surviellance.</p>
+								<p>{{page_data.security_explore_image_entry_1|safe}}</p>
 							</div>
 							</div> 
 						</div> 
@@ -109,9 +111,9 @@
 					<div class="thumbnail">
 						<img src="{{ baseUrl }}seastar/images/4k_image_zoom.png"/>
 						<div class="caption">
-						<div class="explore-title"><h3>VIRTUAL PAN-TILT-ZOOM</h3></div> 
+						<div class="explore-title"><h3>{{page_data.security_explore_image_title_2|safe}}</h3></div> 
 						<div class="explore-text explore-text-2">
-							<p>Control your view with Digital PTZ controls. Wide and closeup views for detailed assesments of lieve and forensic content.</p>
+							<p>{{page_data.security_explore_image_entry_2|safe}}</p>
 						</div> 
 						</div>
 						</div> 
@@ -120,9 +122,9 @@
 					 	<div class="thumbnail">
 					 		<img src="{{ baseUrl }}seastar/images/production.png"/>
 						 	<div class="caption">
-							 <div class="explore-title"><h3>REMOTE STORAGE &amp; VIDEO MANAGEMENT</h3></div> 
+							 <div class="explore-title"><h3>{{page_data.security_explore_image_title_3|safe}}</h3></div> 
 							<div class="explore-text">
-								<p>Control your view with Digital PTZ controls. Wide and closeup views for detailed assesments of lieve and forensic content.</p>
+								<p>{{page_data.security_explore_image_entry_3|safe}}</p>
 							</div> 
 							</div>
 						</div>
