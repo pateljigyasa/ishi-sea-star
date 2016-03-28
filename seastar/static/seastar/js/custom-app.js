@@ -11,6 +11,7 @@ $(document).ready(function() {
 	$('#technical-specs-col4').css("height",$("#technical-specs-col1").height());
 	$('#eye-specs-col4').css("height",$("#eye-specs-col1"). height());
 	$('#eye-specs-col5').css("height",$("#eye-specs-col1").height());
+	//$('.thumbnails').css("height",$("#eye-image-container").height());
 	
 	$(".various").fancybox({
 		maxWidth	: 1200,

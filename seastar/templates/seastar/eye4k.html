@@ -32,21 +32,53 @@
 			</div>  
 		</div>
 	</section> 
-	<div class="container-fluid">
-		<div class="row cloudmate-works-row" id="cloudmate-works">  
-			<div class="col-md-12">
-				<h3 class="row-heading">{{page_data.eye4k_experience_section_title|safe}}</h3>
-				<p class="eye-4k-sub-heading">{{page_data.eye4k_experience_section_subtitle|safe}}</p>
-			</div> 
+	{% if INTERACTION_FLAG %}
+		<div class="container-fluid">
+			<div class="row cloudmate-works-row" id="cloudmate-works">  
+				<div class="col-md-12">
+					<h3 class="row-heading">{{page_data.eye4k_experience_section_title|safe}}</h3>
+					<p class="eye-4k-sub-heading">{{page_data.eye4k_experience_section_subtitle|safe}}</p>
+				</div> 
+			</div>
 		</div>
-	</div>
-	<div class="container center" id="works-section"> 
-		<div class="row cloudmate-works-img">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-				 <img src="{{ baseUrl }}seastar/images/cloudmate_process.png" class="img-thumbnail"  style="width:80%;"/>
-			</div>	
-		</div> 
-	</div>
+		<div class="container" id="eye-image-container">
+	        <div class="eye4k-container">
+	            <div class="main-image-placeholder">
+	                <div class="main-image">
+	                    <img src="{{ baseUrl }}seastar/images/placeholder-image.jpg" />
+	                </div>
+	                <div class="zoom-point zoom-point-yellow"></div>
+	                <div class="zoom-point zoom-point-green"></div>
+	                <div class="zoom-point zoom-point-red"></div>
+	            </div>
+	            <div class="thumbnails">
+	                <div class="row">
+	                    <div class="col-sm-4">
+	                        <div class="thumb-wrapper thumb-yellow">
+	                            <img id="yellow1x" src="{{ baseUrl }}seastar/images/yellow1x.png" class="active" />
+	                            <img id="yellow2x" src="{{ baseUrl }}seastar/images/yellow2x.png"/>
+	                            <img id="yellow3x" src="{{ baseUrl }}seastar/images/yellow3x.png"/>
+	                        </div>
+	                    </div>
+	                    <div class="col-sm-4">
+	                        <div class="thumb-wrapper thumb-green">
+	                            <img id="green1x" src="{{ baseUrl }}seastar/images/green1x.png" class="active"/>
+	                            <img id="green2x" src="{{ baseUrl }}seastar/images/green2x.png" />
+	                            <img id="green3x" src="{{ baseUrl }}seastar/images/green3x.png" />
+	                        </div>
+	                    </div>
+	                    <div class="col-sm-4">
+	                        <div class="thumb-wrapper thumb-red">
+	                            <img id="red1x" src="{{ baseUrl }}seastar/images/red1x.png" class="active"/>
+	                            <img id="red2x" src="{{ baseUrl }}seastar/images/red2x.png"/>
+	                            <img id="red3x" src="{{ baseUrl }}seastar/images/red3x.png"/>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+    {% endif %}
 	<div class="contanier-fluid">
 		<div class="row cloudmate-advantage-section center"> 
 			<div class="col-md-12 col-sm-12 col-xs-12">

@@ -76,6 +76,7 @@ TEMPLATES = [
                 "seastarapp.context_processors.app_twitter_url",
                 "seastarapp.context_processors.app_blog_url",
                 "seastarapp.context_processors.app_contactus_email_address",
+                "seastarapp.context_processors.interaction_flag",
             ],
              
         },
@@ -112,10 +113,11 @@ USE_L10N = True
 USE_TZ = True
 
 """Constants for Seastar Labs"""
-APP_LINKEDIN_URL = 'https://www.linkedin.com/company/ishi-systems-inc.?trk=fc_badge'
-APP_TWITTER_URL = 'http://www.twitter.com/ishisystems' 
+APP_LINKEDIN_URL = 'https://www.linkedin.com/company/mamigo'
+APP_TWITTER_URL = 'https://twitter.com/SeastarLabs' 
 APP_BLOG_URL = 'http://blog.ishisystems.com/'
 APP_CONTACTUS_EMAIL_ADDRESS = 'pateljigyasa@gmail.com'
+INTERACTION_FLAG = 1
 
 """Setting for customization of Grappelli admin tool"""
 #GRAPPELLI_ADMIN_TITLE ='SeaStar';

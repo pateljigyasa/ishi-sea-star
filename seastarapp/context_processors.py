@@ -42,3 +42,7 @@ def app_cloud_native_brochure_download_link(context):
 def app_carousel_learn_more_link(context):
 
     return {'APP_CAROUSEL_LEARN_MORE_LINK' : settings.APP_CAROUSEL_LEARN_MORE_LINK}
+
+def interaction_flag(context):
+
+    return {'INTERACTION_FLAG' : settings.INTERACTION_FLAG}
