@@ -46,3 +46,11 @@ def app_carousel_learn_more_link(context):
 def interaction_flag(context):
 
     return {'INTERACTION_FLAG' : settings.INTERACTION_FLAG}
+
+def ajax_contact_us_url(context):
+
+    return {'AJAX_CONTACT_US_URL' : settings.AJAX_CONTACT_US_URL}
+
+def ajax_request_timeout(context):
+
+    return {'AJAX_REQUEST_TIME_OUT' : settings.AJAX_REQUEST_TIME_OUT}

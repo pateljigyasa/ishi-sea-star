@@ -77,6 +77,8 @@ TEMPLATES = [
                 "seastarapp.context_processors.app_blog_url",
                 "seastarapp.context_processors.app_contactus_email_address",
                 "seastarapp.context_processors.interaction_flag",
+                "seastarapp.context_processors.ajax_contact_us_url",
+                "seastarapp.context_processors.ajax_request_timeout",
             ],
              
         },
@@ -118,6 +120,8 @@ APP_TWITTER_URL = 'https://twitter.com/SeastarLabs'
 APP_BLOG_URL = 'http://blog.ishisystems.com/'
 APP_CONTACTUS_EMAIL_ADDRESS = 'pateljigyasa@gmail.com'
 INTERACTION_FLAG = 1
+AJAX_CONTACT_US_URL = "http://ishi-cms.ishisystems.com/serve-contact-us"
+AJAX_REQUEST_TIME_OUT = 15000
 
 """Setting for customization of Grappelli admin tool"""
 #GRAPPELLI_ADMIN_TITLE ='SeaStar';

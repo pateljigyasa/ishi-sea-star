@@ -969,7 +969,17 @@ a:focus {
 	padding-top:30px;
 	padding-bottom:30px;
 }
-	
+.alert {
+    padding: 10px; 
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.submit-button.active.focus, .submit-button.active:focus, .submit-button.focus, .submit-button:active.focus, .submit-button:active:focus, .submit-button:focus {
+    outline:none;
+    background-color: #871719;
+    color:#ffffff;
+}	
  
 
 

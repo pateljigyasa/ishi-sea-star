@@ -178,26 +178,30 @@
 					<p class="contactform-sub-heading">{{index_data.index_contact_us_section_sub_title|safe}}</p>
 				</div> 
 			</div>
+				<div  id="formErrors"></div>
 				<div class="row contactform"> 
-						<form role="form" action="/contact-response/" method="POST">
+						<form role="form" action="/contact-response/" method="POST" id="cform">
 							{% csrf_token %}
 							<div class="row">
 				        		<div class="col-sm-6 form-group">
-				        			<label for="name">Full Name</label>
+				        			<label for="name">Full Name*</label>
 				          			<!--  <input class="form-control" id="name" name="name" type="text" required>-->
 				          			{{form.name}}
+				          			<div id="nameError"></div>
 				        		</div>
 				        		<div class="col-sm-6 form-group">
-				        			<label for="email">E-mail</label>
+				        			<label for="email">E-mail*</label>
 				          			<!--  <input class="form-control" id="email" name="email" type="email" required>-->
 				          			{{form.email}}
+				          			<div  id="emailError"></div>
 				        		</div>
 			        		</div>
 			        		<div class="row">
 				        		<div class="col-sm-6 form-group">
-				        			<label for="name">Phone Number</label>
+				        			<label for="name">Phone Number*</label>
 				          			<!--  <input class="form-control" id="phoneno" name="phoneno" type="text">-->
 				          			{{form.phoneno}}
+				          			<div  id="phoneError"></div>
 				        		</div>
 				        		<div class="col-sm-6 form-group">
 				        			<label for="email">Company</label>
@@ -210,7 +214,7 @@
 			        		{{form.message}}
 			        		<div class="row">
 			        			<div class="col-sm-12 form-group text-center">
-			        				<button class="btn submit-button" type="submit">Submit</button>
+			        				<button class="btn submit-button" type="submit" id="contactFormSubmit">Submit</button>
 			        			</div>
 			        		</div>
 			        	</form>
@@ -220,6 +224,15 @@
 		</section>
 	 
 {% endblock %} 
+{% block page_usable_javascript %}
+ 	<script>
+    	var loader_gif_image = "{{ baseUrl }}seastar/images/ajax-loader.gif";
+    	var ajax_contact_us_url = "{{ AJAX_CONTACT_US_URL }}";
+    	var timeout = {{ AJAX_REQUEST_TIME_OUT }} ;
+    </script>
+ 
+{% endblock page_usable_javascript %} 
+
 
 
  
