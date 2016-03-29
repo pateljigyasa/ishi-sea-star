@@ -219,7 +219,7 @@ $(document).ready(function() {
 	//load waiting cursor
 	jQuery(document).ajaxStart(function () {
 		//show ajax indicator
-		ajaxindicatorstart('loading data.. please wait..');
+		ajaxindicatorstart('');
 	}).ajaxStop(function () {
 		//hide ajax indicator
 		ajaxindicatorstop();
