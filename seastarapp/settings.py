@@ -119,7 +119,7 @@ APP_LINKEDIN_URL = 'https://www.linkedin.com/company/mamigo'
 APP_TWITTER_URL = 'https://twitter.com/SeastarLabs' 
 APP_BLOG_URL = 'http://blog.ishisystems.com/'
 APP_CONTACTUS_EMAIL_ADDRESS = 'pateljigyasa@gmail.com'
-INTERACTION_FLAG = 1
+INTERACTION_FLAG = 0
 AJAX_CONTACT_US_URL = "http://ishi-cms.ishisystems.com/serve-contact-us"
 AJAX_REQUEST_TIME_OUT = 15000
 
