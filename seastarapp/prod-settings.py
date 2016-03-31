@@ -31,7 +31,7 @@ DEBUG = False
 STATIC_URL =  '/static/'
 STATIC_ROOT = '/var/www/html/seastar/seastarapp/seastar/static/'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

@@ -24,14 +24,13 @@ SECRET_KEY = 'hyqq5x==c@by7v*212yzlfqry%pqrh=$yxdy1v$7!=s-luo1*w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL =  '/static/'
 STATIC_ROOT = 'C:/virtualenv/seastarenv/seastarapp/seastar/static/'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*'] 
 
 
 # Application definition

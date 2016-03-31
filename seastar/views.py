@@ -5,8 +5,21 @@ from django.http import HttpResponseRedirect
 from django.core.mail import send_mail
 from django.forms.forms import Form 
 from seastarapp.settings import APP_CONTACTUS_EMAIL_ADDRESS
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+
+ 
 # Create your views here.
 #Index view 
+def bad_request_handler(request):
+    form=ContactForm() 
+    data_dict={}
+    query_data = Variables.objects.all().filter(key__startswith='index')
+    response = render_to_response('index.html', {'form':form,'index_data': data_dict},
+                                  context_instance=RequestContext(request))
+    response.status_code = 404
+    return response
+
 def index(request): 
     form=ContactForm() 
     data_dict={}
