@@ -15,6 +15,8 @@ def bad_request_handler(request):
     form=ContactForm() 
     data_dict={}
     query_data = Variables.objects.all().filter(key__startswith='index')
+    for data in query_data:
+       data_dict[data.key]= data.value 
     response = render_to_response('index.html', {'form':form,'index_data': data_dict},
                                   context_instance=RequestContext(request))
     response.status_code = 404
