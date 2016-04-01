@@ -10,7 +10,7 @@
 	font-weight:900;
 	font-style:normal;
 }
-@font-face {
+/*@font-face {
 	font-family:SourceSansPro;
 	src:url("../fonts/source-sans-pro/SourceSansPro-BlackItalic.eot?") format("eot"),
 	url("../fonts/source-sans-pro/SourceSansPro-BlackItalic.woff") format("woff"),
@@ -18,7 +18,7 @@
 	url("../fonts/source-sans-pro/SourceSansPro-BlackItalic.svg#SourceSansPro-BlackIt") format("svg");
 	font-weight:900; 
 	font-style:italic;
-}
+}*/
 @font-face {
 	font-family:SourceSansPro;
 	src:url("../fonts/source-sans-pro/SourceSansPro-Bold.eot?") format("eot"),
@@ -27,7 +27,7 @@
 	url("../fonts/source-sans-pro/SourceSansPro-Bold.svg#SourceSansPro-Bold") format("svg");
 	font-weight: bold;
 }
-@font-face {
+/*@font-face {
 	font-family:SourceSansPro;
 	src:url("../fonts/source-sans-pro/SourceSansPro-BoldItalic.eot?") format("eot"),
 	("../fonts/source-sans-pro/SourceSansPro-BoldItalic.woff") format("woff"),
@@ -35,16 +35,16 @@
 	url("../fonts/source-sans-pro/SourceSansPro-BoldItalic.svg#SourceSansPro-BoldIt") format("svg");
 	font-weight: bold;
 	font-style: italic;
-}
-@font-face {
+}*/
+/*@font-face {
 	font-family:SourceSansPro;
 	src:url("../fonts/source-sans-pro/SourceSansPro-ExtraLight.eot?") format("eot"),
 	url("../fonts/source-sans-pro/SourceSansPro-ExtraLight.woff") format("woff"),
 	url("../fonts/source-sans-pro/SourceSansPro-ExtraLight.ttf") format("truetype"),
 	url("../fonts/source-sans-pro/SourceSansPro-ExtraLight.svg#SourceSansPro-ExtraLight") format("svg");
 	font-weight: 200;
-}
-@font-face {
+}*/
+/*@font-face {
 	font-family:SourceSansPro;
 	src:url("../fonts/source-sans-pro/SourceSansPro-ExtraLightIt.eot?") format("eot"),
 	url("../fonts/source-sans-pro/SourceSansPro-ExtraLightIt.woff") format("woff"),
@@ -52,8 +52,8 @@
 	url("../fonts/source-sans-pro/SourceSansPro-ExtraLightIt.svg#SourceSansPro-ExtraLightIt") format("svg");
 	font-style: italic;
 	font-weight: 200;
-}
-@font-face {
+}*/
+/*@font-face {
 	font-family:SourceSansPro;
 	src:url("../fonts/source-sans-pro/SourceSansPro-Italic.eot?") format("eot"),
 	url("../fonts/source-sans-pro/SourceSansPro-Italic.woff") format("woff"),
@@ -61,16 +61,16 @@
 	url("../fonts/source-sans-pro/SourceSansPro-Italic.svg#SourceSansPro-It") format("svg");
 	font-style: italic;
 	font-weight: normal;
-}
-@font-face {
+}*/
+/*@font-face {
 	font-family:SourceSansPro;
 	src:url("../fonts/source-sans-pro/SourceSansPro-Light.eot?") format("eot"),
 	url("../fonts/source-sans-pro/SourceSansPro-Light.woff") format("woff"),
 	url("../fonts/source-sans-pro/SourceSansPro-Light.ttf") format("truetype"),
 	url("../fonts/source-sans-pro/SourceSansPro-Light.svg#SourceSansPro-Light") format("svg"); 
 	font-weight: 300;
-}
-@font-face {
+}*/
+/*@font-face {
 	font-family:SourceSansPro;
 	src:url("../fonts/source-sans-pro/SourceSansPro-LightItalic.eot?") format("eot"),
 	url("../fonts/source-sans-pro/SourceSansPro-LightItalic.woff") format("woff"),
@@ -78,7 +78,7 @@
 	url("../fonts/source-sans-pro/SourceSansPro-LightItalic.svg#SourceSansPro-LightIt") format("svg");
 	font-style: italic;
 	font-weight: 300;
-}
+}*/
 @font-face {
 	font-family:SourceSansPro;
 	src:url("../fonts/source-sans-pro/SourceSansPro-Regular.eot?") format("eot"),
@@ -96,7 +96,7 @@
 	url("../fonts/source-sans-pro/SourceSansPro-Semibold.svg#SourceSansPro-Semibold") format("svg");
 	font-weight: 600; 
 }
-@font-face {
+/*@font-face {
 	font-family:"SourceSansPro";
 	src:url("../fonts/source-sans-pro/SourceSansPro-SemiboldItalic.eot?") format("eot"),
 	url("../fonts/source-sans-pro/SourceSansPro-SemiboldItalic.woff") format("woff"),
@@ -104,7 +104,7 @@
 	url("../fonts/source-sans-pro/SourceSansPro-SemiboldItalic.svg#SourceSansPro-SemiboldIt") format("svg");
 	font-weight: 600; 
 	font-style: italic;
-}
+}*/
 body{
     font-family: SourceSansPro, sans-serif !important;  
     overflow-x: hidden;  
@@ -185,7 +185,7 @@ a:focus {
 	text-align:center
 }
 .top-header {
-		background-image:url("../images/header_image.png");
+		background-image:url("../images/header_image_2.png");
 		background-repeat:no-repeat;
 		width:100%; 
 		background-size:cover;  
