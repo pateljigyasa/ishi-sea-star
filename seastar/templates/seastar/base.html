@@ -39,13 +39,15 @@
    			<link rel="canonical" href="">
    			 {% endblock head_canonical %}
             {% block head_css_site %}
-                <link href="{% version "seastar/css/bootstrap.min.css" %}"
+                <!--  <link href="{% version "seastar/css/bootstrap.min.css" %}"
                       rel="stylesheet" media="screen">
                 <link href="{% version "seastar/css/custom-app-min.css" %}"
                       rel="stylesheet" media="screen"> 
                <link href="{% version "seastar/css/interaction-min.css" %}"
                       rel="stylesheet" media="screen">  
                <link href="{% version "seastar/css/jquery.fancybox-min.css"%}"
+                      rel="stylesheet" media="screen">-->
+               <link href="{% version "seastar/css/custom-combined-min.css"%}"
                       rel="stylesheet" media="screen">
             {% endblock head_css_site %}
             {% block head_css_section %}{% endblock head_css_section %}
@@ -75,12 +77,13 @@
 	
     {# Set of blocks that can be used to display JavaScript files #} 
     	{% block site_javascript %}
-    		<script src="{% version "seastar/js/jquery.min.js"%}"></script>
+    		<!-- <script src="{% version "seastar/js/jquery.min.js"%}"></script>
             <script src="{% version "seastar/js/bootstrap.min.js"%}"></script>
             <script src="{% version "seastar/js/custom-app-min.js"%}"></script> 
             <script src="{% version "seastar/js/bootstrap-colequalizer-min.js"%}"></script> 
             <script src="{% version "seastar/js/jquery.fancybox-min.js"%}"></script> 
-            <script src="{% version "seastar/js/interaction-min.js"%}"></script> 
+            <script src="{% version "seastar/js/interaction-min.js"%}"></script>--> 
+            <script src="{% version "seastar/js/custom-combined-min.js"%}"></script>
     	{%endblock site_javascript%}
         {% block page_usable_javascript %}{% endblock page_usable_javascript %} 
   </body>  
