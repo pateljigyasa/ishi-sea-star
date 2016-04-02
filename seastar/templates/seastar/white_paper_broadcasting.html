@@ -1,0 +1,21 @@
+{%extends 'base.html'%} 
+from django.utils.http import urlquote_plus
+#Change page specific attributes  
+	{%block header%}
+    	{%include 'header_static.html' with li_display_text="WHITE PAPER @ FUTURE OF 4K BROADCASTING"%}
+	{%endblock header%}
+	{% block content %}
+    <div class="container-fluid" style="height:500px;">
+      <div class="row"> 
+			<div class="jumbotron center">
+				<h3 class="row-heading">FUTURE OF 4K BROADCASTING</h3>
+				<h4>White Paper</h4>
+				<br>
+				<p>Access to this document is restricted.  Use the link below to request access.</p>
+				<br><br>
+				<a class="get-in-touch-box" href="mailto:{{APP_REQUEST_EMAIL_ADDRESS}}?subject={{ 'White Paper Access - Future Of 4k Broadcasting'|urlencode }}">REQUEST ACCESS</a>&nbsp;&nbsp;&nbsp;
+				<a class="get-in-touch-box" href="/">BACK</a>
+			 </div> 
+      </div> 
+    </div> 
+ {% endblock content %}

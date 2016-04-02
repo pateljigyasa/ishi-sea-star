@@ -49,7 +49,7 @@ def interaction_flag(context):
 
 def ajax_contact_us_url(context):
 
-    return {'AJAX_CONTACT_US_URL' : settings.AJAX_CONTACT_US_URL}
+    return {'AJAX_CONTACT_US_URL' : settings.AJAX_CONTACT_US_URL} 
 
 def ajax_request_timeout(context):
 

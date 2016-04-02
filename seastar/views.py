@@ -76,6 +76,13 @@ def strive(request):
        
     return render(request, 'strive.html',{'page_data': data_dict})
 
+
+def case_study_video_solutions(request): 
+    return render(request, 'case_study_video_solutions.html',{})
+
+def white_paper_broadcasting(request): 
+    return render(request, 'white_paper_broadcasting.html',{})
+
 #Response method for contact which will send mail.
 def contact_response(request): 
     if request.method == 'POST': 

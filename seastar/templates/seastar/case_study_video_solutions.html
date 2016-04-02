@@ -1,0 +1,21 @@
+{%extends 'base.html'%} 
+from django.utils.http import urlquote_plus
+#Change page specific attributes  
+	{%block header%}
+    	{%include 'header_static.html' with li_display_text="CASE STUDY @ VIDEO SOLUTIONS"%}
+	{%endblock header%}
+	{% block content %}
+    <div class="container-fluid" style="height:500px;">
+      <div class="row"> 
+			<div class="jumbotron center">
+				<h3 class="row-heading">NEXT GENERATION VIDEO SOLUTIONS</h3>
+				<h4>Case Study</h4>
+				<br>
+				<p>Access to this document is restricted.  Use the link below to request access.</p>
+				<br><br>
+				<a class="get-in-touch-box" href="mailto:{{APP_REQUEST_EMAIL_ADDRESS}}?subject={{ 'Case Study Access- Next Generation Video Solutions'|urlencode }}">REQUEST ACCESS</a>&nbsp;&nbsp;&nbsp;
+				<a class="get-in-touch-box" href="/">BACK</a>
+			 </div> 
+      </div> 
+    </div> 
+ {% endblock content %}

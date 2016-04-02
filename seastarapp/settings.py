@@ -29,7 +29,7 @@ DEBUG = True
 
 STATIC_URL =  '/static/'
 STATIC_ROOT = 'C:/virtualenv/seastarenv/seastarapp/seastar/static/'
-
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
 ALLOWED_HOSTS = ['*'] 
 
 
@@ -78,6 +78,7 @@ TEMPLATES = [
                 "seastarapp.context_processors.interaction_flag",
                 "seastarapp.context_processors.ajax_contact_us_url",
                 "seastarapp.context_processors.ajax_request_timeout",
+                "seastarapp.context_processors.app_request_email_address",
             ],
              
         },
@@ -97,6 +98,17 @@ DATABASES = {
 		'USER':'django_seastar',
 		'PASSWORD':'pass123',
     }
+}
+CACHES = {
+
+    'default': {
+
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+
+        'LOCATION': 'seastar_cache',
+
+    }
+
 }
 
 
@@ -121,6 +133,7 @@ APP_CONTACTUS_EMAIL_ADDRESS = 'pateljigyasa@gmail.com'
 INTERACTION_FLAG = 0
 AJAX_CONTACT_US_URL = "http://ishi-cms.ishisystems.com/serve-contact-us"
 AJAX_REQUEST_TIME_OUT = 15000
+APP_REQUEST_EMAIL_ADDRESS="info@seastar.com"
 
 """Setting for customization of Grappelli admin tool"""
 #GRAPPELLI_ADMIN_TITLE ='SeaStar';

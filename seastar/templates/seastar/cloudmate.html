@@ -1,7 +1,6 @@
 <!-- Security Page--> 
 {% extends 'base.html' %} 
 {% block content %}  
-
 	<section class="section-fluid cloudmate-bg ">
 		<div class="gameview-production-overlay">
 		 	<div class="container eye4k-img-text-overlay">
@@ -116,17 +115,12 @@
 			</div>
 		 </div> 
 	</section>  
-{% endblock %} 
-
-{% block page_usable_javascript %}
-	
+{% endblock %}  
+{% block page_usable_javascript %} 
 		<script>  
 			$(document).ready(function() {
 				 $(".target-active").find("[href='/security/']").parent().addClass("active");
 				 
 			}); 
 		</script>
-{% endblock page_usable_javascript %}   
-
-
- 
+{% endblock page_usable_javascript %} 

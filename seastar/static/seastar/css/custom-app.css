@@ -280,11 +280,20 @@ a:focus {
  	font-weight:900;
  	color:#ffffff;
 }
-.left-about-overlay h4 ,.right-about-overlay h4{
+.left-about-overlay h4 a,.right-about-overlay h4 a{
  	font-size:30px;
  	font-weight:900;
  	color:#d3ae00;
 }
+.left-about-overlay h4 a:hover,.right-about-overlay h4 a:hover{
+ 	 text-decoration:none;
+ 	 outline:none;
+}
+.left-about-overlay h4 a:focus,.right-about-overlay h4 a:focus{
+	 text-decoration:none;
+ 	 outline:none;
+}
+
 .left-about-overlay p,.right-about-overlay p{
  	font-size:30px;
  	font-weight:900;
@@ -981,7 +990,37 @@ a:focus {
     background-color: #871719;
     color:#ffffff;
 }	
- 
+.get-in-touch-box {
+    border: 2px solid;
+    border-radius: 4px 4px 4px 4px;
+    color: #464646;
+    padding: 7px 17px;
+    display:inline-block;
+    cursor:pointer;
+    margin-bottom: 10px;
+    text-decoration: none; 
+    font-size:22px;
+}
+.get-in-touch-box:hover { 
+    color: #ffffff; 
+    background-color:#464646;
+    text-decoration: none;
+}
+.jumbotron  {
+	background-color:#ffffff;
+}
+.jumbotron p  {
+	color: #848484;
+    font-size: 23px;
+}
+.jumbotron h4 {
+	color: #838383;
+    font-size: 22px;
+}
+.get-in-touch-box:focus { 
+    outline:none;
+    text-decoration: none;
+}
 
 
 

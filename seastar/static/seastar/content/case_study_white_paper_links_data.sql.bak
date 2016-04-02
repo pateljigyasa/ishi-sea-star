@@ -1,0 +1,8 @@
+--
+-- Dumping data for table `seastar_variables`
+--
+
+INSERT INTO seastar_variables('key','value')values('index_case_study_pdf_link','null');
+INSERT INTO seastar_variables('key','value')values('index_white_paper_pdf_link','null');
+INSERT INTO seastar_variables('key','value')values('index_white_paper_access_denied_link','/white-paper-broadcasting/');
+INSERT INTO seastar_variables('key','value')values('index_case_study_access_denied_link','/case-study-video-solutions/');

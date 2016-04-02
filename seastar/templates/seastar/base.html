@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <!-- Base Template for whole site. Every Template Extends this. It contains header, footer, css, js, and static files and headers common in all templates -->
-
 {% load static %}
-{% load utils %}
-
-{% static "" as baseUrl %} 
- 
+{% load utils %} 
+{% static "" as baseUrl %}  
 <html>
     <!-- Make modifable head elements -->
     <head>
@@ -30,32 +27,29 @@
             {% endblock head_meta_description %}
             {% block head_meta_keywords %}
    				<meta name="keywords" content="">
-   			{% endblock head_meta_keywords %}
-   			
-   			
+   			{% endblock head_meta_keywords %} 
         {% endblock head_meta %}
         {% block head_css %}
         	{% block head_canonical %}
    			<link rel="canonical" href="">
    			 {% endblock head_canonical %}
             {% block head_css_site %}
-                <!--  <link href="{% version "seastar/css/bootstrap.min.css" %}"
+               <!--  <link href="{% version "seastar/css/bootstrap.min.css" %}"
                       rel="stylesheet" media="screen">
-                <link href="{% version "seastar/css/custom-app-min.css" %}"
+                <link href="{% version "seastar/css/custom-app.css" %}"
                       rel="stylesheet" media="screen"> 
                <link href="{% version "seastar/css/interaction-min.css" %}"
                       rel="stylesheet" media="screen">  
                <link href="{% version "seastar/css/jquery.fancybox-min.css"%}"
                       rel="stylesheet" media="screen">-->
-               <link href="{% version "seastar/css/custom-combined-min.css"%}"
+                <link href="{% version "seastar/css/custom-combined-min.css"%}"
                       rel="stylesheet" media="screen">
             {% endblock head_css_site %}
             {% block head_css_section %}{% endblock head_css_section %}
             {% block head_css_page %}{% endblock head_css_page %}
         {% endblock head_css %} 
     </head> 
-    <body > 
-
+    <body >  
 		<div class="se-pre-con"></div> 
 	    {# The Header #}
 	    {%block header%}
@@ -63,18 +57,15 @@
 	    <!-- Header of the website -->
        {% include 'header.html' %} 
        {%endblock%} 
-     	
 	    {# The Document Body #} 
 	    {% block content %} 
 	        {#The submenu #}
 	        	{%block sub_menu%} {%endblock%} 
-	    {% endblock %}
-	    
+	    {% endblock %} 
 	    {# The Footer #}
 	    {%block footer%}   
 	    	{% include 'footer.html' %} 
-	    {%endblock footer%}   
-	
+	    {%endblock footer%}  
     {# Set of blocks that can be used to display JavaScript files #} 
     	{% block site_javascript %}
     		<!-- <script src="{% version "seastar/js/jquery.min.js"%}"></script>
@@ -87,5 +78,4 @@
     	{%endblock site_javascript%}
         {% block page_usable_javascript %}{% endblock page_usable_javascript %} 
   </body>  
-  
 </html>

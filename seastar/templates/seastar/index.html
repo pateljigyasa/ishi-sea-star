@@ -29,7 +29,11 @@
 				<div class="about-section">
 					<div class="about-image left-img-bg"></div> 
 					<div class="left-about-overlay">
-						<h4>CASE STUDY</h4> 
+						 {% if index_data.index_case_study_pdf_link != "null" %}
+							<h4><a href="{{baseUrl}}{{index_data.index_case_study_pdf_link}}" target="_blank">CASE STUDY</a></h4>
+						 {% else %}
+						 	<h4><a href="{{index_data.index_case_study_access_denied_link}}">CASE STUDY</a></h4>
+						{% endif %} 
 						<h2 class="hidden-xs hidden-sm">Next Generation Video <br>Solutions</h2>
 						<h2 class="hidden-md hidden-lg">Next Generation Video Solutions</h2>
 						<p>Security & Surveillance</p>
@@ -40,12 +44,15 @@
 				<div class="about-section">
 					<div class="about-image right-img-bg"></div>
 					<div class="right-about-overlay">
-						<h4>WHITE PAPER</h4> 
+						{% if index_data.index_white_paper_pdf_link != "null" %}
+							<h4><a href="{{baseUrl}}{{index_data.index_white_paper_pdf_link}}" target="_blank">WHITE PAPER</a></h4>
+						 {% else %}
+						 	<h4><a href="{{index_data.index_white_paper_access_denied_link}}">WHITE PAPER</a></h4>
+						{% endif %} 
 						<h2>Future of 4k <br>Broadcasting</h2>
 						<p>Video Production</p>
 					</div> 
-				</div> 
-			 
+				</div>  
 			</div>
 		</div>
 	</div>	 
@@ -167,8 +174,7 @@
 			</div>
 		</div> 
 		</div>
-	</section>
-	<!-- <span class="anchor" id="contact-form"></span>-->
+	</section> 
 		<section class="section-fluid" id="contact-form">
 			<div class="container ">
 			<div class="row contactus"> 
@@ -185,55 +191,43 @@
 							{% csrf_token %}
 							<div class="row">
 				        		<div class="col-sm-6 form-group">
-				        			<label for="name">Full Name*</label>
-				          			<!--  <input class="form-control" id="name" name="name" type="text" required>-->
+				        			<label for="name">Full Name*</label> 
 				          			{{form.name}}
 				          			<div id="nameError"></div>
 				        		</div>
 				        		<div class="col-sm-6 form-group">
-				        			<label for="email">E-mail*</label>
-				          			<!--  <input class="form-control" id="email" name="email" type="email" required>-->
+				        			<label for="email">E-mail*</label> 
 				          			{{form.email}}
 				          			<div  id="emailError"></div>
 				        		</div>
 			        		</div>
 			        		<div class="row">
 				        		<div class="col-sm-6 form-group">
-				        			<label for="name">Phone Number*</label>
-				          			<!--  <input class="form-control" id="phoneno" name="phoneno" type="text">-->
+				        			<label for="name">Phone Number*</label> 
 				          			{{form.phoneno}}
 				          			<div  id="phoneError"></div>
 				        		</div>
 				        		<div class="col-sm-6 form-group">
-				        			<label for="email">Company</label>
-				          			<!--  <input class="form-control" id="company" name="company" type="text">-->
+				        			<label for="email">Company</label> 
 				          			{{form.company}}
 				        		</div>
 			        		</div>
 			        		<label for="message">Message</label>
-			        		<!-- <textarea class="form-control" id="message" name="message" rows="5"></textarea> -->
 			        		{{form.message}}
 			        		<div class="row">
 			        			<div class="col-sm-12 form-group text-center">
 			        				<button class="btn submit-button" type="submit" id="contactFormSubmit">Submit</button>
 			        			</div>
 			        		</div>
-			        	</form>
-					 
+			        	</form> 
 				</div>
 			 </div>
-		</section>
-	 
+		</section> 
 {% endblock %} 
 {% block page_usable_javascript %}
  	<script>
     	var loader_gif_image = "{{ baseUrl }}seastar/images/ajax-loader.gif";
     	var ajax_contact_us_url = "{{ AJAX_CONTACT_US_URL }}";
     	var timeout = {{ AJAX_REQUEST_TIME_OUT }} ;
-    </script>
- 
-{% endblock page_usable_javascript %} 
-
-
-
- 
+    </script> 
+{% endblock page_usable_javascript %}  
