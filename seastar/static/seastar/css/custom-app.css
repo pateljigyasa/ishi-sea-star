@@ -183,12 +183,13 @@ a:focus {
 }
 .center {
 	text-align:center
-}
+} 
 .top-header {
-		background-image:url("../images/header_image_2.png");
-		background-repeat:no-repeat;
-		width:100%; 
-		background-size:cover;  
+	background-image:url("../images/header_image_2.jpg");
+	background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+  
 }
 .top-header h1 {
 	color:#d3ae00; 
@@ -477,13 +478,13 @@ a:focus {
 }
  
 .post1 {
-	 background-image:url('../images/Manoj_Headshot.png');
+	 background-image:url('../images/Manoj_Headshot.jpg');
 }
 .post2{
-	 background-image:url('../images/Akhil_Headshot.png');
+	 background-image:url('../images/Akhil_Headshot.jpg');
 }
 .post3 {
-	 background-image:url('../images/Rajiv_Headshot.png');
+	 background-image:url('../images/Rajiv_Headshot.jpg');
 }
 .about-section {
 	width: 100%; 
@@ -501,7 +502,7 @@ a:focus {
 	background-image:url('../images/video.jpg');
 }
 .right-img-bg {
-	background-image:url('../images/surveilance.png');
+	background-image:url('../images/surveilance.jpg');
 } 
 .section-gray {
 	 font-size:15px;
@@ -535,7 +536,7 @@ a:focus {
 	text-align:center;   
 }
 #top-header-img-wrapper {
-	background-image:url("../images/security_background_new.png");
+	background-image:url("../images/security_background_new.jpg");
 	background-repeat:no-repeat; 
 	background-size:cover;   
 	background-position:center;
@@ -706,7 +707,7 @@ a:focus {
 	position:relative;
 }
 .eye4k-bg {
-	background-image:url("../images/security_background_new.png");
+	background-image:url("../images/security_background_new.jpg");
 	background-repeat:no-repeat; 
 	background-size:cover;   
 	background-position:center;
@@ -723,7 +724,7 @@ a:focus {
 	 
 }
 .video-production-bg {
-	background-image:url('../images/production_background.png');
+	background-image:url('../images/production_background.jpg');
 	background-repeat:no-repeat; 
 	background-size:cover;   
 	background-position:center;
