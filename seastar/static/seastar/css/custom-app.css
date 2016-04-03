@@ -347,8 +347,13 @@ a:focus {
 	background-color:#ffffff;
 	padding:65px 15px 85px;  
 }
+ 
+.indexeye4k-logo-3, .indexstrive-logo-3 ,.indexgameview-logo-3,.indexsecurity-surveillance,.indexvideo-production,.indexmanoj-headshot,.indexakhil-headshot,.indexrajiv-headshot{ 
+	max-width: 100%; background-size: 100%; background-image: url('../images/home_sprite.png'); 
+
+}
 .video-images .thumbnail img {  
-    height:60px; 
+    /*height:60px; */
 }
 .video-images .thumbnail {
 	border: transparent;
