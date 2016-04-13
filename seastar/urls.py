@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^eye4k/$', cache_page(60 * 15)(views.eye4k)),
     url(r'^video-production/$', cache_page(60 * 15)(views.videoproduction)),
     url(r'^game-view/$', cache_page(60 * 15)(views.gameview)),
+    url(r'^careers/$', cache_page(60 * 15)(views.careers)),
     url(r'^strive/$', cache_page(60 * 15)(views.strive)),
     url(r'^index/$', cache_page(60 * 15)(views.index),name='index'), 
     url(r'^case-study-video-solutions/$', cache_page(60 * 15)(views.case_study_video_solutions),name='case_study_video_solutions'), 

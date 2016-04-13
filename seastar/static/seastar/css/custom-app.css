@@ -407,6 +407,7 @@ a:focus {
     background-color: #f6f6f6;
     padding-bottom: 20px;
     text-align: center; 
+    height:100%;
 }
 .services-image {
 	width: 100%;
@@ -728,6 +729,15 @@ a:focus {
 	position:relative;
 	 
 }
+.careers-production-bg {
+	background-image:url('../images/career_header_bg.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	padding-bottom:66.59%;
+	position:relative;
+	 
+}
 .video-production-bg {
 	background-image:url('../images/production_background.jpg');
 	background-repeat:no-repeat; 
@@ -1027,9 +1037,100 @@ a:focus {
     outline:none;
     text-decoration: none;
 }
+.careers-prod-text-overlay {
+		position:relative;
+		top:25%;  
+		padding:0;
+		text-align:center;
+}
+.careers-prod-text-overlay h1{
+	font-size:35px;
+ 	font-weight:900;
+ 	color:#d3ae00;
+}
+.careers-prod-text-overlay h2{
+	font-size:30px;
+ 	font-weight:600;
+ 	color:#ffffff;
+}
+.career-carousel-header h1{
+	color:#871719;
+	font-size:80px;
+	font-weight:900;
+}
+.career-carousel-header h2{
+	color:#848484;
+	font-size:60px; 
+} 
+ .carousel-indicators li {
+     border-color: #871719;
+     width:20px;
+     height:20px;
+     border:2px solid #871719;
+ }
+ .carousel-indicators li.active {
+     background-color: #871719;
+     width:20px;
+     height:20px;
+     border:2px solid #871719;
+ }
+ .item h4 {
+     font-size: 54px;  
+     color:#871719;
+     margin-top:50px;
+     margin-bottom:150px;
+ } 
+ .career-work-centers-container {   
+	 background-color: #871719;
+	 padding: 70px 0 70px 0;
+	 width:100%;
+ }
+ .career-work-center-row {
+ 	padding-bottom:50px;
+ }
+ .career-work-center-row h4{
+ 	color: #ffffff; 
+    font-weight: 600;
+    font-size: 35px;
+ }
 
-
-
+.career-work-center-address-row h1{
+	color: #ffffff; 
+    font-weight: 600;
+    font-size: 35px;
+}
+.career-work-center-address-row p{
+	color: #ffffff;  
+    font-size: 35px;
+}
+.border {
+	border-left:none;
+	border-right:none;
+}
+.career-open-position-section {
+	width:100%;
+	background-color:#f6f6f6;
+	padding:70px 0;
+}
+.open-position-row-1 {
+	margin-top:50px;	
+}
+.open-position-row-2 {
+	margin-top:5px;
+}
+.open-position-row-1 .col-xs-12, .open-position-row-2 .col-xs-12{
+		width:100%;
+		background-color:#871719;
+		margin-top:15px;
+		height:250px;
+}
+.open-position-row-1 .col-xs-12 h4,.open-position-row-2 .col-xs-12 h4{
+	 color:#ffffff;
+	 font-size:40px;
+	 font-weight:600;
+}
+  
+  
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
 	 
@@ -1133,7 +1234,7 @@ a:focus {
 	.navbar {
 		font-size:16px;
 	}
-	.security-section-extra-padding {
+	.security-section-extra-padding,.career-carousel-container-padding{
 		padding:50px 0 50px 0;
 	}
 	.explore-row .col-sm-4 {
@@ -1207,8 +1308,8 @@ a:focus {
 	}
 	.post-col {
 		background-color:#ffffff;
-		width:30.6%;
-		margin:10px; 
+		width:43%;
+		margin:15px; 
 		padding:0;
 	}
 	.explore-text-1,.explore-text-2 {
@@ -1238,7 +1339,37 @@ a:focus {
 		padding-bottom:30%;
 		padding-top:60px;
 	}
-	 
+	.careers-prod-text-overlay {
+		position:relative;
+		top:40%;  
+		padding:0;
+		text-align:right;
+	}
+	.careers-prod-text-overlay h1{
+		font-size:54px;
+	 	font-weight:900;
+	 	color:#d3ae00;
+	}
+	.careers-prod-text-overlay h2{
+		font-size:45px;
+	 	font-weight:600;
+	 	color:#ffffff;
+	}
+	.border {
+		border-left: 1px solid #ffffff;
+		border-right: 1px solid #ffffff;
+	}
+	.open-position-row-1 .col-sm-4,.open-position-row-2 .col-sm-4 {
+		width:30%;
+		background-color:#871719;
+		margin:12px;
+		height:200px;
+	}
+	.open-position-row-1 .col-sm-4 h4,.open-position-row-2 .col-sm-4 h4 {
+		 color:#ffffff;
+		 font-size:40px;
+		 font-weight:600;
+	}
 	
 	
 	
@@ -1345,8 +1476,8 @@ a:focus {
 	}
 	.post-col {
 		background-color:#ffffff;
-		width:31%;
-		margin:10px; 
+		width:45%;
+		margin:15px; 
 		padding:0;
 	}
 	.explore-row .col-md-4 {
@@ -1370,6 +1501,33 @@ a:focus {
 	.eye4k-header-text p ,.cloudmate-header-text p{ 
 		text-align:right;
 		font-size:28px;
+	}
+	.careers-prod-text-overlay {
+		position:relative;
+		top:40%;  
+		padding:0;
+		text-align:right;
+	}
+	.careers-prod-text-overlay h1{
+		font-size:54px;
+	 	font-weight:900;
+	 	color:#d3ae00;
+	}
+	.careers-prod-text-overlay h2{
+		font-size:45px;
+	 	font-weight:600;
+	 	color:#ffffff;
+	}
+	.open-position-row-1 .col-md-4,.open-position-row-2 .col-md-4  {
+		width:28.2%;
+		background-color:#871719;
+		margin:25px;
+		height:250px;
+	}
+	.open-position-row-1 .col-md-4 h4, .open-position-row-2 .col-md-4 h4{
+		 color:#ffffff;
+		 font-size:45px;
+		 font-weight:600;
 	}
 	
 }
@@ -1475,6 +1633,22 @@ a:focus {
 		padding:0;
 		text-align:right;
 	}
+	.careers-prod-text-overlay {
+		position:relative;
+		top:40%;  
+		padding:0;
+		text-align:right;
+	}
+	.careers-prod-text-overlay h1{
+		font-size:54px;
+	 	font-weight:900;
+	 	color:#d3ae00;
+	}
+	.careers-prod-text-overlay h2{
+		font-size:45px;
+	 	font-weight:600;
+	 	color:#ffffff;
+	}
 	.video-prod-text-overlay h1{
 	 	font-size:54px;
 	 	font-weight:900;
@@ -1488,8 +1662,8 @@ a:focus {
 	}
 	.post-col {
 		background-color:#ffffff;
-		width:30%;
-		margin:19px;
+		width:46%;
+		margin:15px;
 		padding:0;
 	}
 	.technology-images-text-1 p {
@@ -1522,6 +1696,17 @@ a:focus {
 	.eye4k-header-text p,.cloudmate-header-text p { 
 		text-align:right;
 		font-size:35px;
+	}
+	.open-position-row-1 .col-md-4,.open-position-row-2 .col-md-4 {
+		width:29%;
+		background-color:#871719;
+		margin:25px;
+		height:300px;
+	}
+	.open-position-row-1 .col-md-4 h4,.open-position-row-2 .col-md-4 h4{
+		 color:#ffffff;
+		 font-size:50px;
+		 font-weight:600;
 	}
 	 
 	 

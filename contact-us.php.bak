@@ -50,7 +50,7 @@ $company = $_POST["company"];
 $msg = $_POST["message"];
   
 $from = "awanish.tiwari@ishisystems.com";  
-$to = array('David.Manner@seastarlabs.com','Manoj.Aggarwal@seastarlabs.com','pateljigyasa@gmail.com','awanish.tiwari@ishisystems.com','awanishkeshav@gmail.com');    
+$to = array('pateljigyasa@gmail.com','awanish.tiwari@ishisystems.com','awanishkeshav@gmail.com');  
 $successMsg = "Thanks a lot for contacting us. We shall get back to you shortly.";
 
 

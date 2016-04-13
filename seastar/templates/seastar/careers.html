@@ -1,0 +1,93 @@
+<!-- Security Page-->
+{% extends 'base.html' %} 
+{% block content %}   
+	<section class="section-fluid careers-production-bg ">
+		<div class="video-production-overlay">
+		 	<div class="container careers-prod-text-overlay" >
+		 		<div class = "row"> 
+				 		<div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12" >  
+								<h1>Careers</h1> 
+								<h2>Join Our Team</h2> 
+						</div>
+					</div>
+			 	</div> 
+			</div> 
+	</section>  
+	 <div class="container career-carousel-container-padding">
+	 	<div class="row">
+	 		<div class="col-md-12 text-center career-carousel-header">
+			 	<h1>5</h1>
+			 	<h2>Reasons To</h2>
+			 	<h2>Work At Seastar</h2>
+		 	</div>
+	 	</div>
+  		<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+   		 	<!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		      <li data-target="#myCarousel" data-slide-to="3"></li>
+		      <li data-target="#myCarousel" data-slide-to="4"></li>
+		    </ol>
+
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+		      <div class="item active">
+		        <h4>There are no &#8216;B&#8217; teams</h4>
+		      </div>
+		      <div class="item">
+		        <h4>There are no &#8216;B&#8217; teams</h4>
+		      </div>
+		      <div class="item">
+		        <h4>There are no &#8216;B&#8217; teams</h4>
+		      </div>
+		      <div class="item">
+		        <h4>There are no &#8216;B&#8217; teams</h4>
+		      </div>
+		      <div class="item">
+		        <h4>There are no &#8216;B&#8217; teams</h4>
+		      </div>
+		    </div>  
+  		</div>
+	</div>  
+	<section class="career-work-centers-container">
+		<div class="container">
+			<div class="row career-work-center-row text-center">
+				<div class="col-md-12"><h4>Where Do You Want To Work</h4></div>
+			</div>
+			<div class="row career-work-center-address-row">
+				<div class="col-md-4 col-sm-4 col-xs-12 text-center"><h1>Jersey City</h1><p>New Jersey, USA</p></div>
+				<div class="col-md-4 col-sm-4 col-xs-12 text-center border"><h1>Princeton</h1><p>New Jersey, USA</p></div>
+				<div class="col-md-4 col-sm-4 col-xs-12 text-center"><h1>Bangalore</h1><p> Karnataka, India</p></div>
+			</div>
+		</div>
+	</section>
+	<section class="career-open-position-section">
+		<div class="container">
+			<div class="row"> 
+				<div class="col-md-12 text-center">
+					<h3 class="row-heading">OPEN POSITIONS</h3>
+				</div> 
+			</div>
+			<div class="row text-center open-position-row-1">
+				<div class="col-md-4 col-sm-4 col-xs-12 center-col"><div class="center-top-header"><h4>Java Developer</h4></div></div>
+				<div class="col-md-4 col-sm-4 col-xs-12 center-col"><div class="center-top-header"><h4>Java Developer</h4></div></div>
+				<div class="col-md-4 col-sm-4 col-xs-12 center-col"><div class="center-top-header"><h4>Technical Architect</h4></div></div>
+			</div>
+			<div class="row text-center open-position-row-2">
+				<div class="col-md-4 col-sm-4 col-xs-12 center-col"><div class="center-top-header"><h4>Java Developer</h4></div></div>
+				<div class="col-md-4 col-sm-4 col-xs-12 center-col"><div class="center-top-header"><h4>Java Developer</h4></div></div>
+				<div class="col-md-4 col-sm-4 col-xs-12 center-col"><div class="center-top-header"><h4>Technical Architect</h4></div></div>
+			</div>
+		</div>
+	</section>
+{% endblock %}  
+{% block page_usable_javascript %} 
+		<script>  
+			$(document).ready(function() {
+				 $(".target-active").find("[href='/video-production/']").parent().addClass("active");
+				 
+			}); 
+		</script>
+{% endblock page_usable_javascript %} 
