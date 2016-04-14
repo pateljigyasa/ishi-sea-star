@@ -187,18 +187,18 @@
 			</div>
 		</section>
 		{% endif %} 
-		<section class="section-fluid" id="contact-form" style="background:#9b9b9b !important;">
-			<div class="container" style="background:#9b9b9b !important;">
-			<div class="row contactus" style="background:#9b9b9b !important;"> 
+		<section class="section-fluid" id="contact-form" style="background:#dddddd !important;">
+			<div class="container" style="background:#dddddd !important;">
+			<div class="row contactus" style="background:#dddddd !important;"> 
 				<div class="col-md-12 margin-bottom-10">
 					<h3 class="row-heading">{{index_data.index_contact_us_section_title|safe}}</h3>
 				</div> 
 				<div class="col-sm-10 col-sm-offset-1">
-					<p class="contactform-sub-heading" style="color:#ffffff;">{{index_data.index_contact_us_section_sub_title|safe}}</p>
+					<p class="contactform-sub-heading">{{index_data.index_contact_us_section_sub_title|safe}}</p>
 				</div> 
 			</div>
 				<div  id="formErrors"></div>
-				<div class="row contactform" style="background:#9b9b9b !important;"> 
+				<div class="row contactform" style="background:#dddddd !important;"> 
 						<form role="form" action="/contact-response/" method="POST" id="cform">
 							{% csrf_token %}
 							<div class="row">
