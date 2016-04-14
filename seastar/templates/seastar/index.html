@@ -4,7 +4,15 @@
 	 <div class="container-fluid contentContainer top-header" id="home">
 	 	<div class="row" >
 	 		<div class="col-md-12 center-col" id="topCol">
-	 			<div class="center-top-header">  
+	 			<div class="center-top-header"> 
+	 				<div class="nab-wrapper">
+				    <div class="nab-content">
+				      <p class="title">Come check us out @NAB Show</p>
+				      <p class="nab-content-p"><a href="http://www.newtek.com/news-events/events.html?task=view_event&amp;event_id=291" target="_blank">NAB Show 2016 - Las Vegas, NV - April 18-21, 2016</a></p>
+				      <p class="nab-content-p">Booth SU9317SUL</p>
+				      <p class="nab-content-p"><a target="_blank" href="http://nabshow.com/">http://nabshow.com</a></p>
+				  	</div> 
+				  	</div>
 			 		<h1>VIDEO HAS EVOLVED</h1>
 			 		<p class="lead">We Develop Next Generation Technologies</p>
 			 	</div>  
@@ -36,7 +44,7 @@
 						{% endif %} 
 						<h2 class="hidden-xs hidden-sm">Next Generation Video <br>Solutions</h2>
 						<h2 class="hidden-md hidden-lg">Next Generation Video Solutions</h2>
-						<p>Security & Surveillance</p>
+						<p>Video Production</p>
 					</div>
 				</div> 
 			</div>
@@ -50,7 +58,7 @@
 						 	<h4><a href="{{index_data.index_white_paper_access_denied_link}}">WHITE PAPER</a></h4>
 						{% endif %} 
 						<h2>Future of 4k <br>Broadcasting</h2>
-						<p>Video Production</p>
+						<p>Security & Surveillance</p>
 					</div> 
 				</div>  
 			</div>
@@ -135,60 +143,62 @@
 			</div>
 		</div>
 	</section>
-	<section class="section-fluid" id="leadership">
-	<div class="container leadership">
-		<div class="row leadership-section-text"> 
-			<div class="col-md-12">
-				<h3 class="row-heading">{{index_data.index_our_leadership_section_title|safe}}</h3>
+	{% if LEADERSHIP_FLAG %}
+		<section class="section-fluid" id="leadership">
+		<div class="container leadership">
+			<div class="row leadership-section-text"> 
+				<div class="col-md-12">
+					<h3 class="row-heading">{{index_data.index_our_leadership_section_title|safe}}</h3>
+				</div> 
+			</div>
+			
+			<div class="row our-leadership-row col-eq">
+				<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+				<div class="col-md-6 col-sm-6 col-xs-12 post-col"> 
+					<div class="post">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS0AAAEsAQMAAACscXcIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII=" style="background-position: 0 52.586771%; background-size: 184.385382%;width:100%;" class="indexmanoj-headshot">
+						 <p class="post-title">{{index_data.index_our_leadership_section_image_title_1|safe}} <br/> {{index_data.index_our_leadership_section_image_sub_title_1|safe}}</p> 
+						<div class="post-entry">
+							<p>{{index_data.index_our_leadership_section_image_entry_1|safe}}</p>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 post-col"> 
+					<div class="post" style="">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII=" style="background-position: 0 72.298625%; background-size: 185%;;width:100%;" class="indexakhil-headshot">
+						 <p class="post-title">{{index_data.index_our_leadership_section_image_title_2|safe}}<br/> {{index_data.index_our_leadership_section_image_sub_title_2|safe}}</p> 
+						  
+						<div class="post-entry">
+							<p>{{index_data.index_our_leadership_section_image_entry_2|safe}}</p>
+						</div> 
+					</div>
+				</div>
+				<!--<div class="col-md-4 col-sm-4 col-xs-12 post-col"> 
+					<div class="post" style="">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII="" style="background-position: 0 92.010478%; background-size: 185%; width:100%;" class="indexrajiv-headshot">
+						 <p class="post-title">{{index_data.index_our_leadership_section_image_title_3|safe}} <br/>{{index_data.index_our_leadership_section_image_sub_title_3|safe}}</p> 
+						<div class="post-entry">
+							<p>{{index_data.index_our_leadership_section_image_entry_3|safe}}</p>
+						</div> 
+					</div>
+				</div>-->
+			</div>
 			</div> 
-		</div>
-		
-		<div class="row our-leadership-row col-eq">
-			<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-			<div class="col-md-6 col-sm-6 col-xs-12 post-col"> 
-				<div class="post">
-					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS0AAAEsAQMAAACscXcIAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII=" style="background-position: 0 52.586771%; background-size: 184.385382%;width:100%;" class="indexmanoj-headshot">
-					 <p class="post-title">{{index_data.index_our_leadership_section_image_title_1|safe}} <br/> {{index_data.index_our_leadership_section_image_sub_title_1|safe}}</p> 
-					<div class="post-entry">
-						<p>{{index_data.index_our_leadership_section_image_entry_1|safe}}</p>
-					</div> 
-				</div>
 			</div>
-			<div class="col-md-6 col-sm-6 col-xs-12 post-col"> 
-				<div class="post" style="">
-					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII=" style="background-position: 0 72.298625%; background-size: 185%;;width:100%;" class="indexakhil-headshot">
-					 <p class="post-title">{{index_data.index_our_leadership_section_image_title_2|safe}}<br/> {{index_data.index_our_leadership_section_image_sub_title_2|safe}}</p> 
-					  
-					<div class="post-entry">
-						<p>{{index_data.index_our_leadership_section_image_entry_2|safe}}</p>
-					</div> 
-				</div>
-			</div>
-			<!-- <div class="col-md-4 col-sm-4 col-xs-12 post-col"> 
-				<div class="post" style="">
-					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII="" style="background-position: 0 92.010478%; background-size: 185%; width:100%;" class="indexrajiv-headshot">
-					 <p class="post-title">{{index_data.index_our_leadership_section_image_title_3|safe}} <br/>{{index_data.index_our_leadership_section_image_sub_title_3|safe}}</p> 
-					<div class="post-entry">
-						<p>{{index_data.index_our_leadership_section_image_entry_3|safe}}</p>
-					</div> 
-				</div>
-			</div>-->
-		</div>
-		</div> 
-		</div>
-	</section> 
-		<section class="section-fluid" id="contact-form">
-			<div class="container ">
-			<div class="row contactus"> 
+		</section>
+		{% endif %} 
+		<section class="section-fluid" id="contact-form" style="background:#9b9b9b !important;">
+			<div class="container" style="background:#9b9b9b !important;">
+			<div class="row contactus" style="background:#9b9b9b !important;"> 
 				<div class="col-md-12 margin-bottom-10">
 					<h3 class="row-heading">{{index_data.index_contact_us_section_title|safe}}</h3>
 				</div> 
 				<div class="col-sm-10 col-sm-offset-1">
-					<p class="contactform-sub-heading">{{index_data.index_contact_us_section_sub_title|safe}}</p>
+					<p class="contactform-sub-heading" style="color:#ffffff;">{{index_data.index_contact_us_section_sub_title|safe}}</p>
 				</div> 
 			</div>
 				<div  id="formErrors"></div>
-				<div class="row contactform"> 
+				<div class="row contactform" style="background:#9b9b9b !important;"> 
 						<form role="form" action="/contact-response/" method="POST" id="cform">
 							{% csrf_token %}
 							<div class="row">

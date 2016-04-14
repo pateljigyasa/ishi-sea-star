@@ -77,6 +77,7 @@ TEMPLATES = [
                 "seastarapp.context_processors.app_blog_url",
                 "seastarapp.context_processors.app_contactus_email_address",
 				"seastarapp.context_processors.interaction_flag",
+                "seastarapp.context_processors.leadership_flag",
 				"seastarapp.context_processors.ajax_contact_us_url",
                 "seastarapp.context_processors.ajax_request_timeout",
                 "seastarapp.context_processors.app_request_email_address",
@@ -132,6 +133,7 @@ APP_BLOG_URL = 'http://blog.ishisystems.com/'
 APP_LINKEDIN_URL = 'https://www.linkedin.com/company/mamigo'
 APP_TWITTER_URL = 'https://twitter.com/SeastarLabs' 
 INTERACTION_FLAG = 0
+LEADERSHIP_FLAG = 0
 APP_CONTACTUS_EMAIL_ADDRESS = 'some@email.com'
 AJAX_CONTACT_US_URL = "/serve-contact-us"
 AJAX_REQUEST_TIME_OUT = 15000

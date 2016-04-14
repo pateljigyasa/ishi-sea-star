@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from seastar.forms import ContactForm 
+from seastar.forms import ApplyForm 
 from seastar.models import Variables
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail
@@ -69,6 +70,7 @@ def gameview(request):
     return render(request, 'gameview.html',{'page_data': data_dict})
 
 def careers(request): 
+    #form=ApplyForm() 
     """data_dict={}
     query_data = Variables.objects.all().filter(key__startswith='careers')
     for data in query_data:

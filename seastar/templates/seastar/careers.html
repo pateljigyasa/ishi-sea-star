@@ -82,12 +82,49 @@
 			</div>
 		</div>
 	</section>
+	<!-- <section class="section-fluid" id="contact-form">
+			<div class="container ">
+			<div class="row contactus"> 
+				<div class="col-md-12 margin-bottom-10">
+					<h3 class="row-heading">Apply Now</h3>
+				</div>  
+			</div>
+				<div  id="formErrors"></div>
+				<div class="row contactform"> 
+						<form role="form" action="/contact-response/" method="POST" id="cform">
+							{% csrf_token %}
+							<div class="row">
+				        		<div class="col-sm-6 form-group">
+				        			<label for="name">Full Name*</label> 
+				          			{{form.name}}
+				          			<div id="nameError"></div>
+				        		</div>
+				        		<div class="col-sm-6 form-group">
+				        			<label for="email">E-mail*</label> 
+				          			{{form.email}}
+				          			<div  id="emailError"></div>
+				        		</div>
+			        		</div>
+			        		<div class="row">
+				        		<div class="col-sm-6 form-group">
+				        			<label for="name">Phone Number*</label> 
+				          			{{form.phoneno}}
+				          			<div  id="phoneError"></div>
+				        		</div>
+				        		<div class="col-sm-6 form-group">
+				        			<label for="email">Linkedin Profile</label> 
+				          			{{form.linkedinprofile}}
+				        		</div>
+			        		</div>
+			        		<label for="message">Message</label>
+			        		{{form.message}}
+			        		<div class="row">
+			        			<div class="col-sm-12 form-group text-center">
+			        				<button class="btn submit-button" type="submit" id="applyFormSubmit">Submit</button>
+			        			</div>
+			        		</div>
+			        	</form> 
+				</div>
+			 </div>
+		</section>--> 
 {% endblock %}  
-{% block page_usable_javascript %} 
-		<script>  
-			$(document).ready(function() {
-				 $(".target-active").find("[href='/video-production/']").parent().addClass("active");
-				 
-			}); 
-		</script>
-{% endblock page_usable_javascript %} 

@@ -322,9 +322,8 @@ a:focus {
 	color:#9c9c9c;
 	font-size:15px;
 }
-.contactform label{
-	 
-	color:#848484;
+.contactform label{ 	
+	color:#ffffff;
 	font-size:19px; 
 }
 .contactform {
@@ -1128,6 +1127,34 @@ a:focus {
 	 color:#ffffff;
 	 font-size:40px;
 	 font-weight:600;
+}
+.nab-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+.nab-wrapper p.title {
+    font-size: 32px;
+    margin: 0;
+    font-weight:900;
+}
+.nab-wrapper p.nab-content-p {
+    line-height: normal;
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-weight:normal; 
+    font-size:19px;
+}
+.nab-wrapper a {
+    color: #fff;
+    text-decoration:none;
+}
+.nab-wrapper a:hover {
+    color: #f6653c;
+    text-decoration:none;
 }
   
   

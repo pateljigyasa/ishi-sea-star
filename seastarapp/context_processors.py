@@ -47,9 +47,17 @@ def interaction_flag(context):
 
     return {'INTERACTION_FLAG' : settings.INTERACTION_FLAG}
 
+def leadership_flag(context):
+
+    return {'LEADERSHIP_FLAG' : settings.LEADERSHIP_FLAG}
+
 def ajax_contact_us_url(context):
 
     return {'AJAX_CONTACT_US_URL' : settings.AJAX_CONTACT_US_URL} 
+
+def ajax_apply_form_url(context):
+
+    return {'AJAX_APPLY_FORM_URL' : settings.AJAX_APPLY_FORM_URL} 
 
 def ajax_request_timeout(context):
 

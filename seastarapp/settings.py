@@ -15,7 +15,7 @@ import os
 from django.conf.global_settings import SERVER_EMAIL
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) 
-
+print(BASE_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -76,7 +76,9 @@ TEMPLATES = [
                 "seastarapp.context_processors.app_blog_url",
                 "seastarapp.context_processors.app_contactus_email_address",
                 "seastarapp.context_processors.interaction_flag",
+                "seastarapp.context_processors.leadership_flag",
                 "seastarapp.context_processors.ajax_contact_us_url",
+                "seastarapp.context_processors.ajax_apply_form_url",
                 "seastarapp.context_processors.ajax_request_timeout",
                 "seastarapp.context_processors.app_request_email_address",
             ],
@@ -131,7 +133,9 @@ APP_TWITTER_URL = 'https://twitter.com/SeastarLabs'
 APP_BLOG_URL = 'http://blog.ishisystems.com/'
 APP_CONTACTUS_EMAIL_ADDRESS = 'pateljigyasa@gmail.com'
 INTERACTION_FLAG = 0
+LEADERSHIP_FLAG = 0
 AJAX_CONTACT_US_URL = "http://ishi-cms.ishisystems.com/serve-contact-us"
+AJAX_APPLY_FORM_URL = "http://ishi-cms.ishisystems.com/serve-contact-us"
 AJAX_REQUEST_TIME_OUT = 15000
 APP_REQUEST_EMAIL_ADDRESS="info@seastar.com"
 
