@@ -82,7 +82,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- <section class="section-fluid" id="contact-form">
+	<section class="section-fluid" id="contact-form">
 			<div class="container ">
 			<div class="row contactus"> 
 				<div class="col-md-12 margin-bottom-10">
@@ -91,7 +91,7 @@
 			</div>
 				<div  id="formErrors"></div>
 				<div class="row contactform"> 
-						<form role="form" action="/contact-response/" method="POST" id="cform">
+						<form role="form" method="POST" id="applyform">
 							{% csrf_token %}
 							<div class="row">
 				        		<div class="col-sm-6 form-group">
@@ -112,8 +112,9 @@
 				          			<div  id="phoneError"></div>
 				        		</div>
 				        		<div class="col-sm-6 form-group">
-				        			<label for="email">Linkedin Profile</label> 
+				        			<label for="linkedinprofile">Linkedin Profile*</label> 
 				          			{{form.linkedinprofile}}
+				          			<div  id="linkedinError"></div>
 				        		</div>
 			        		</div>
 			        		<label for="message">Message</label>
@@ -126,5 +127,12 @@
 			        	</form> 
 				</div>
 			 </div>
-		</section>--> 
-{% endblock %}  
+		</section>
+{% endblock %} 
+{% block page_usable_javascript %}
+ 	<script>
+    	var loader_gif_image = "{{ baseUrl }}seastar/images/ajax-loader.gif";
+    	var ajax_apply_form_url  = "{{ AJAX_APPLY_FORM_URL }}";
+    	var timeout = {{ AJAX_REQUEST_TIME_OUT }} ;
+    </script> 
+{% endblock page_usable_javascript %}   

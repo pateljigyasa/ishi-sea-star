@@ -135,7 +135,7 @@ APP_CONTACTUS_EMAIL_ADDRESS = 'pateljigyasa@gmail.com'
 INTERACTION_FLAG = 0
 LEADERSHIP_FLAG = 0
 AJAX_CONTACT_US_URL = "http://ishi-cms.ishisystems.com/serve-contact-us"
-AJAX_APPLY_FORM_URL = "http://ishi-cms.ishisystems.com/serve-contact-us"
+AJAX_APPLY_FORM_URL = "http://ishi-cms.ishisystems.com/serve-apply-now"
 AJAX_REQUEST_TIME_OUT = 15000
 APP_REQUEST_EMAIL_ADDRESS="info@seastar.com"
 

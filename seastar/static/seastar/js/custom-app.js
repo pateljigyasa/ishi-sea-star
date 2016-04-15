@@ -114,6 +114,99 @@ $(document).ready(function() {
         $("#phoneError").html("");
         $("#phoneError").removeClass("alert-danger")
     }
+    
+    $("#applyFormSubmit").click(function(i) {
+        i.preventDefault();
+        r();
+        var h = $("#id_name").val();
+        var g = $("#id_email").val();
+        var f = $("#id_phoneno").val();
+        var d = $("#id_linkedinprofile").val();
+        var j = $("#id_message").val();
+        $.support.cors = true;
+        $.ajax({
+            url: ajax_apply_form_url,
+            type: "POST",
+            dataType: "json",
+            timeout: timeout,
+            cache: false,
+            data: {
+                name: h,
+                email: g,
+                phoneno: f,
+                linkedinprofile: d,
+                message: j
+            },
+            success: function(e) {
+                if (!e || e == null || jQuery.isEmptyObject(e)) {
+                    $("#formErrors").html("We are experiencing some problems, please try later.");
+                    $("#formErrors").addClass("alert");
+                    $("#formErrors").addClass("alert-danger")
+                } else {
+                    if (e.success) {
+                        $("#formErrors").html(e.data);
+                        $("#formErrors").addClass("alert");
+                        $("#formErrors").addClass("alert-success");
+                        $("#applyform")[0].reset()
+                    } else {
+                        if (Object.prototype.toString.call(e.error) == "[object String]") {
+                            $("#formErrors").html(e.error);
+                            $("#formErrors").addClass("alert");
+                            $("#formErrors").addClass("alert-danger")
+                        } else {
+                            $.each(e.error, function(k, l) {
+                                if (l.field == "name") {
+                                    $("#nameError").html(l.msg);
+                                    $("#nameError").addClass("alert");
+                                    $("#nameError").addClass("alert-danger")
+                                }
+                                if (l.field == "email") {
+                                    $("#emailError").html(l.msg);
+                                    $("#emailError").addClass("alert");
+                                    $("#emailError").addClass("alert-danger")
+                                }
+                                if (l.field == "phone") {
+                                    $("#phoneError").html(l.msg);
+                                    $("#phoneError").addClass("alert");
+                                    $("#phoneError").addClass("alert-danger")
+                                }
+                                if (l.field == "linkedinprofile") {
+                                    $("#linkedinError").html(l.msg);
+                                    $("#linkedinError").addClass("alert");
+                                    $("#linkedinError").addClass("alert-danger")
+                                }
+                            })
+                        }
+                    }
+                }
+            },
+            error: function(k, l, e) {
+                if (l == "timeout") {
+                    $("#formErrors").html("Connection time out. Please try again later.");
+                    $("#formErrors").addClass("alert");
+                    $("#formErrors").addClass("alert-danger")
+                } else {
+                    $("#formErrors").html("We are experiencing some problems, please try later.");
+                    $("#formErrors").addClass("alert");
+                    $("#formErrors").addClass("alert-danger")
+                }
+            }
+        })
+    });
+
+    function r() {
+        $("#formErrors").html("");
+        $("#formErrors").removeClass("alert-success");
+        $("#formErrors").removeClass("alert-danger");
+        $("#nameError").html("");
+        $("#nameError").removeClass("alert-danger");
+        $("#emailError").html("");
+        $("#emailError").removeClass("alert-danger");
+        $("#linkedinError").html("");
+        $("#linkedinError").removeClass("alert-danger");
+        $("#phoneError").html("");
+        $("#phoneError").removeClass("alert-danger");
+    }
 
     function b(d) {
         if (jQuery("body").find("#resultLoading").attr("id") != "resultLoading") {
