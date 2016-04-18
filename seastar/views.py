@@ -71,12 +71,12 @@ def gameview(request):
 
 def careers(request): 
     form=ApplyForm() 
-    """data_dict={}
+    data_dict={}
     query_data = Variables.objects.all().filter(key__startswith='careers')
     for data in query_data:
-       data_dict[data.key]= data.value"""
+       data_dict[data.key]= data.value
        
-    return render(request, 'careers.html',{'form': form})
+    return render(request, 'careers.html',{'form': form,'page_data': data_dict})
 
 def strive(request): 
     data_dict={}

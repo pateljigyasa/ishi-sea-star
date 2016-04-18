@@ -14,8 +14,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 from django.conf.global_settings import SERVER_EMAIL
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) 
-print(BASE_DIR)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
